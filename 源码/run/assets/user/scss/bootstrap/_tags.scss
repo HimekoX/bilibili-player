@@ -1,0 +1,415 @@
+/*---- Tags-----*/
+
+.tag {
+	font-size: 0.75rem;
+	color: #6b6f80;
+	background-color: #f0f0f2;
+	border-radius: 3px;
+	padding: 0 .5rem;
+	line-height: 2em;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	cursor: default;
+	font-weight: 400;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  a.tag {
+	text-decoration: none;
+	cursor: pointer;
+	transition: .3s color, .3s background;
+  
+	&:hover {
+	  background-color: rgba(110, 118, 135, 0.2);
+	  color: inherit;
+	}
+  }
+  
+  .tag-addon {
+	display: inline-block;
+	padding: 0 .5rem;
+	color: inherit;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.06);
+	margin: 0 -.5rem 0 .5rem;
+	text-align: center;
+	min-width: 1.5rem;
+  
+	&:last-child {
+	  border-top-right-radius: 3px;
+	  border-bottom-right-radius: 3px;
+	}
+  
+	i {
+	  vertical-align: middle;
+	  margin: 0 -.25rem;
+	}
+  }
+  
+  a.tag-addon {
+	text-decoration: none;
+	cursor: pointer;
+	transition: .3s color, .3s background;
+  
+	&:hover {
+	  background: rgba(0, 0, 0, 0.16);
+	  color: inherit;
+	}
+  }
+  
+  .tag-avatar {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 3px 0 0 3px;
+	margin: 0 .5rem 0 -.5rem;
+  }
+  
+  .tag-blue {
+	background-color: #083dc1;
+	color: $white;
+  }
+  
+  .tag-indigo {
+	background-color: $indigo;
+	color: $white;
+  }
+  
+  .tag-purple {
+	background-color: $purple;
+	color: $white;
+  }
+  
+  .tag-pink {
+	background-color: $pink;
+	color: $white;
+  }
+  
+  .tag-red {
+	background-color: #dc0441;
+	color: $white;
+  }
+  
+  .tag-orange {
+	background-color: $orange;
+	color: $white;
+  }
+  
+  .tag-yellow {
+	background-color: #ecb403;
+	color: $white;
+  }
+  
+  .tag-green {
+	background-color: #2dce89;
+	color: $white;
+  }
+  
+  .tag-teal {
+	background-color: $teal;
+	color: $white;
+  }
+  
+  .tag-cyan {
+	background-color: $cyan;
+	color: $white;
+  }
+  
+  .tag-white {
+	background-color: $white;
+	color: $white;
+  }
+  
+  .tag-gray {
+	background-color: $gray;
+	color: $white;
+  }
+  
+  .tag-gray-dark {
+	background-color: $dark;
+	color: $white;
+  }
+  
+  .tag-azure {
+	background-color: #45aaf2;
+	color: $white;
+  }
+  
+  .tag-lime {
+	background-color: #7bd235;
+	color: $white;
+  }
+  
+  .tag-success {
+	background-color: #2dce89;
+	color: $white;
+  }
+  
+  .tag-info {
+	background-color: #45aaf2;
+	color: $white;
+  }
+  
+  .tag-warning {
+	background-color: #ecb403;
+	color: $white;
+  }
+  
+  .tag-danger {
+	background-color: #dc0441;
+	color: $white;
+  }
+  
+  .tag-light {
+	background-color: #f8f9fa;
+	color: $white;
+  }
+  
+  .tag-dark {
+	background-color: $dark;
+	color: $white;
+  }
+  
+  .tag-rounded {
+	border-radius: 50px;
+  
+	.tag-avatar {
+	  border-radius: 50px;
+	}
+  }
+  
+  .tags {
+	margin-bottom: -.5rem;
+	font-size: 0;
+  
+	> .tag {
+	  margin-bottom: .5rem;
+  
+	  &:not(:last-child) {
+		margin-right: .5rem;
+	  }
+	}
+  }
+  
+  .highlight {
+	.hll {
+	  background-color: #ffc;
+	}
+  
+	.c {
+	  color: #999;
+	}
+  
+	.k {
+	  color: #069;
+	}
+  
+	.o {
+	  color: #555;
+	}
+  
+	.cm {
+	  color: #999;
+	}
+  
+	.cp {
+	  color: #099;
+	}
+  
+	.c1, .cs {
+	  color: #999;
+	}
+  
+	.gd {
+	  background-color: #fcc;
+	  border: 1px solid #c00;
+	}
+  
+	.ge {
+	  font-style: italic;
+	}
+  
+	.gr {
+	  color: #f00;
+	}
+  
+	.gh {
+	  color: #030;
+	}
+  
+	.gi {
+	  background-color: #cfc;
+	  border: 1px solid #0c0;
+	}
+  
+	.go {
+	  color: #aaa;
+	}
+  
+	.gp {
+	  color: #009;
+	}
+  
+	.gu {
+	  color: #030;
+	}
+  
+	.gt {
+	  color: #9c6;
+	}
+  
+	.kc, .kd, .kn, .kp, .kr {
+	  color: #069;
+	}
+  
+	.kt {
+	  color: #078;
+	}
+  
+	.m {
+	  color: #f60;
+	}
+  
+	.s {
+	  color: #cc0099;
+	}
+  
+	.na {
+	  color: #00cc7a;
+	}
+  
+	.nb {
+	  color: #366;
+	}
+  
+	.nc {
+	  color: #0a8;
+	}
+  
+	.no {
+	  color: #360;
+	}
+  
+	.nd {
+	  color: #99f;
+	}
+  
+	.ni {
+	  color: #999;
+	}
+  
+	.ne {
+	  color: #c00;
+	}
+  
+	.nf {
+	  color: #c0f;
+	}
+  
+	.nl {
+	  color: #99f;
+	}
+  
+	.nn {
+	  color: #0cf;
+	}
+  
+	.nt {
+	  color: #6967ce;
+	}
+  
+	.nv {
+	  color: #033;
+	}
+  
+	.ow {
+	  color: $black;
+	}
+  
+	.w {
+	  color: #bbb;
+	}
+  
+	.mf, .mh, .mi, .mo {
+	  color: #f60;
+	}
+  
+	.sb, .sc {
+	  color: #c30;
+	}
+  
+	.sd {
+	  font-style: italic;
+	  color: #c30;
+	}
+  
+	.s2, .se, .sh {
+	  color: #c30;
+	}
+  
+	.si {
+	  color: #a00;
+	}
+  
+	.sx {
+	  color: #c30;
+	}
+  
+	.sr {
+	  color: #3aa;
+	}
+  
+	.s1 {
+	  color: #c30;
+	}
+  
+	.ss {
+	  color: #fc3;
+	}
+  
+	.bp {
+	  color: #366;
+	}
+  
+	.vc, .vg, .vi {
+	  color: #033;
+	}
+  
+	.il {
+	  color: #f60;
+	}
+  
+	.css {
+	  .o {
+		color: #999;
+  
+		+ .nt {
+		  color: #999;
+		}
+	  }
+  
+	  .nt + .nt {
+		color: #999;
+	  }
+	}
+  
+	.language-bash::before, .language-sh::before {
+	  color: #009;
+	  content: "$ ";
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+  
+	.language-powershell::before {
+	  color: #009;
+	  content: "PM> ";
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+  }

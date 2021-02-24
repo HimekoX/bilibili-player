@@ -1,0 +1,146 @@
+<view id="report-list">
+    <title>管理列表</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>弹幕系统</a>
+            <a><cite>举报列表</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">举报列表</li>
+                </ul>
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <form class="query"></form>
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                清理选中
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm falser">
+                                误报选中
+                            </button>
+                        </div>
+                        <table id="system-report-table" lay-filter="system-report-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/barrage/saveBarrage';
+
+        tableInstance = hex.renderTable('system-report-table', '/system/barrage/getReportList', '#system-report-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }, {
+                field: 'id', title: 'ID'
+            }, {
+                field: 'cid', title: '弹幕ID'
+            },
+            {
+                field: 'text', title: '弹幕内容'
+            }, {
+                field: 'type', title: '举报类型'
+            }, {
+                field: 'ip', title: '发送IP'
+            }, {
+                title: '时间', templet: function (item) {
+                    value = item.time;
+                    var date = new Date(parseInt(value) * 1000)
+                    var tt = [date.getFullYear(), date.getMonth() + 1, date.getDate()].join('-') + '  ' + [date.getHours(), date.getMinutes()].join(':');
+                    return tt;
+                }
+            }, {
+                field: 'referer', title: '来源地址'
+            },
+            {
+                width: 120, action: [
+                    {type: "button", title: "误报", class: "layui-btn-normal false"},
+                    {type: "button", title: "删除", class: "layui-btn-warm dels"}
+                ]
+            }
+        ]], res => {
+            hex.setIdMap(res.data);
+
+            $('#report-list .false').click(function () {
+                let data = hex.getMapItem(this);
+                layer.confirm('您确认是误报吗，这是不可恢复的哦 (。・・)ノ', {
+                    btn: ['确认', '取消']
+                }, function () {
+                    admin.req({
+                        url: '/system/barrage/delReport',
+                        method: "POST",
+                        data: {
+                            list: [data.id]
+                        },
+                        success: res => {
+                            layer.msg(res.msg);
+                            tableInstance.instance.reload();
+                        }
+                    });
+
+                });
+            });
+
+            $('#report-list .dels').click(function () {
+
+               let data = hex.getMapItem(this);
+                layer.confirm('您确认要删除吗，这是不可恢复的哦 (。・・)ノ', {
+                    btn: ['确认', '取消']
+                }, function () {
+                    admin.req({
+                        url: '/system/barrage/delBarrage',
+                        method: "POST",
+                        data: {
+                            list: [data.id]
+                        },
+                        success: res => {
+                            layer.msg(res.msg);
+                            tableInstance.instance.reload();
+                        }
+                    });
+
+                });
+            });
+        }, saveUrl);
+
+        $('#report-list .create').click(() => {
+            modal();
+        });
+
+        $('#report-list .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-report-table').data);
+
+            hex.deleteBatchEntity('/system/barrage/delBarrage', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+
+        $('#report-list .falser').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-report-table').data);
+
+            hex.deleteBatchEntity('/system/barrage/delReport', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+
+        hex.query('#report-list .query', tableInstance.instance, [
+            {title: "内容查询", name: "search-text", type: "input", width: 151},
+            {title: "类型查询", name: "equal-type", type: "input", width: 151},
+            {title: "弹幕ID", name: "equal-id", type: "input", width: 151},
+            {title: "发送IP", name: "equal-ip", type: "input", width: 151}
+        ]);
+
+    });
+</script>

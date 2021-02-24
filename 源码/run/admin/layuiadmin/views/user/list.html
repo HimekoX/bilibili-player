@@ -1,0 +1,126 @@
+<view id="user-list">
+    <title>用户管理</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>用户管理</a>
+            <a><cite>用户列表</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">所有用户</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <form class="query"></form>
+
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm create">
+                                新增用户
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+                        <table id="user-list-table" lay-filter="user-list-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/users/saveUser';
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "头像", name: "face", type: "image", placeholder: "请选择图片", width: 120},
+                {title: "用户名", name: "user", type: "input", placeholder: "请输入用户名"},
+                {title: "密码", name: "pass", type: "input", placeholder: "请输入密码"},
+                {title: "状态", name: "status", type: "switch", text: "启用"}
+            ], res => {
+                tableInstance.instance.reload();
+            }, values);
+        };
+
+        tableInstance = hex.renderTable('user-list-table', '/system/users/getUsers', '#user-list-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }
+            , {
+                field: 'face', title: '头像', dictType: 'image', width: 60
+            }
+            , {
+                field: 'user', title: '用户名', templet: function (item) {
+                    return '<span data-id="' + item.id + '" class="username user-' + item.id + '" style="cursor: pointer;">[<b style="color: red;">' + (item.id) + '</b>] ' + item.user + '</span>'
+                }
+            }
+            , {
+                field: 'login_time', title: '登录时间'
+            }
+            , {
+                field: 'create_time', title: '创建时间'
+            }
+            , {
+                field: 'login_ip', title: '登录IP'
+            }
+            , {
+                field: 'status', title: '状态', dictType: "switch", dictText: "启用"
+            },
+            {
+                action: [
+                    {type: "button", icon: "layui-icon-survey", title: "修改", class: "layui-btn-normal edit"}
+                ]
+            }
+        ]], res => {
+            $('#user-list .username').hover(function () {
+                var id = $(this).attr('data-id'), info = [], user = hex.getMapItem(this);
+
+                info.push('用户昵称:' + user.nick);
+                info.push('手机号:' + user.phone);
+                info.push('邮箱号:' + user.mailbox);
+                info.push('登录时间:' + user.login_time);
+                info.push('注册时间:' + user.create_time);
+                info.push('登录IP:' + user.login_ip);
+
+                layerTipsIndex = layer.tips(info.join('<br>'), '#user-list .user-' + id, {
+                    tips: [2, '#ffab16'],
+                    time: 0
+                });
+
+            }, function () {
+                layer.close(layerTipsIndex);
+            });
+
+            hex.setIdMap(res.data);
+            $('#user-list .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+        }, saveUrl);
+
+        $('#user-list .create').click(() => {
+            modal();
+        });
+
+        $('#user-list .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('user-list-table').data);
+            hex.deleteBatchEntity('/system/users/delUser', data, res => {
+                tableInstance.instance.reload();
+            });
+        });
+
+        hex.query('#user-list .query', tableInstance.instance, [
+            {title: "用户名", name: "equal-user", type: "input", width: 151},
+            {title: "注册时间", name: "betweenStart-create_time", type: "date", width: 170},
+            {title: "请选择状态", name: "equal-status", type: "select", width: 170, dict: "system_user_status"},
+        ]);
+    });
+</script>

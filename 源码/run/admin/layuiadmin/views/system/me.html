@@ -1,0 +1,187 @@
+<title>修改资料</title>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card text-center"
+             style="background: url(/admin/images/bg_top.png);background-position: 100%;">
+            <div class="layui-card-body" style="text-align:center;">
+                <div class="layadmin-homepage-pad-ver" style="padding-top: 15px;padding-bottom: 15px;">
+                    <img id="avatarPic" onclick="document.getElementById('avatar').click()" class="layadmin-homepage-pad-img"
+                         src="/assets/upload/default.jpg" width="96" height="96"
+                         style="border-radius: 50%;box-shadow: 0 0 0 4px rgba(0,0,0,.1);">
+                    <input id="avatar" type="file" style="display: none"/>
+                </div>
+                <h4 class="layadmin-homepage-font" style="font-size: 1.2em;color: #2b425b;" id="user">初始化..</h4>
+                <p class="layadmin-homepage-min-font" id="phone">初始化..</p>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-header">用户创建时间:<span id="create_date">初始化..</span></div>
+        <div class="layui-card-body" style="padding: 15px;">
+            <form class="layui-form" id="FormData" lay-filter="component-form-group">
+                <input id="avatarUrl" name="avatarUrl" type="text" style="display: none"/>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">登录用户名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="user" value="初始化.." disabled class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">用户昵称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="nickname" placeholder="不修改默认显示登录名~" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">手机号码</label>
+                        <div class="layui-input-inline">
+                            <input type="tel" name="phone" lay-verify="required|phone" placeholder="请输入手机号" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">修改密码</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="pass" placeholder="不修改留空~" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">我的角色组</label>
+                        <div class="layui-input-inline">
+                            <div class="layui-input-inline admin-me-roles"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="layui-form-item layui-layout-admin">
+    <div class="layui-input-block">
+        <div class="layui-footer">
+            <div class="layui-btn" id="editUser">保存修改</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .layui-input-inline {
+        line-height: 38px;
+    }
+
+
+    .system-role-status-success {
+        border: 1px solid #20bd3e;
+    }
+
+    .system-role-status-error {
+        border: 1px solid #ffe941;
+    }
+</style>
+
+<script>
+    layui.use(['admin', 'form', 'user'], function () {
+        var $ = layui.$
+            , admin = layui.admin
+            , setter = layui.setter;
+        var rolesInstance = $('.admin-me-roles');
+        rolesInstance.html('');
+
+        var event = {
+            getInfo: function () {
+                admin.req({
+                    url: "/system/user/getMeInfo",
+                    method: "POST",
+                    done: function (res) {
+                        $('#avatarPic').attr('src', res.data.face);
+                        $('input[name=avatarUrl]').val(res.data.face);
+                        if(res.data.nickname != ""){
+                            document.getElementById("user").innerHTML= res.data.nickname;
+                        }else{
+                            document.getElementById("user").innerHTML= res.data.user;
+                        }
+
+                        document.getElementById("phone").innerHTML= res.data.phone;
+
+                        document.getElementById("create_date").innerHTML= res.data.create_date;
+                        $('input[name=user]').val(res.data.user);//用户名
+                        $('input[name=nickname]').val(res.data.nickname);//用户昵称
+                        $('input[name=phone]').val(res.data.phone);//手机号
+
+                        //角色
+                        res.data.roles.forEach(function (item, index) {
+                            var css = item.status === 1 ? 'system-role-status-success' : 'system-role-status-error';
+                            rolesInstance.append('<button type="button" class="layui-btn ' + css + ' layui-btn-primary layui-btn-sm system-role-info-id-' + index + '"><b>' + item.name + '</b></button>');
+                        });
+                    }
+                });
+            }
+        };
+
+
+        $('#avatar').change(function () {
+            layer.msg('正在请求中..');
+            var formdata = new FormData();
+            formdata.append("file", $('#avatar')[0].files[0]);
+
+            $.ajax({
+                url: '/system/other/upload' //实际使用请改成服务端真实接口
+                , type: 'POST'
+                , dataType: 'json'//数据类型
+                , contentType: false
+                , processData: false
+                , data: formdata
+                , success: function (res) {
+                    if (res.code === 200) {
+                        layer.msg("上传成功,记得保存哦~");
+                        $('#avatarPic').attr('src', res.data.path);
+                        $('input[name=avatarUrl]').val(res.data.path);
+                    } else {
+                        layer.msg(res.msg);
+
+                    }
+                }
+            });
+
+        });
+
+        $('#editUser').click(function () {
+
+            layer.msg('正在请求中..');
+            $.ajax({
+                url: "/system/user/editMeInfo"//地址
+                , type: 'POST'//类型
+                , dataType: 'json'//数据类型
+                , data: $('#FormData').serialize(),
+                //请求成功
+                success: function (data) {
+                    if (data.code !== 200) {
+                        layer.msg(data.msg);
+                    } else {
+                        layer.msg(data.msg);
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 1000)
+                    }
+
+                }
+            })
+        });
+
+        event.getInfo();
+    });
+</script>

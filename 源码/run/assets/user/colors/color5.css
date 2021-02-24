@@ -1,0 +1,2974 @@
+a:hover {
+  color: #06bfd3;
+}
+
+.default-card.default .loader {
+  border-top-color: #06bfd3;
+}
+
+.file-manger.list-group-transparent .list-group-item.active {
+  color: #06bfd3;
+}
+
+.custom-progress::-webkit-progress-value {
+  background-color: #06bfd3;
+}
+
+.custom-progress::-moz-progress-bar {
+  background-color: #06bfd3;
+}
+
+.custom-progress::-ms-fill {
+  background-color: #06bfd3;
+}
+
+.card-pay .tabs-menu li a.active {
+  background: #06bfd3;
+  /*-- Horizontal-menu --*/
+  /*-- Sidemenu --*/
+}
+
+.card-pay .tabs-menu li a.active a:hover {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .default-card.default .loader {
+  border-top-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .file-manger.list-group-transparent .list-group-item.active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-progress::-webkit-progress-value, .card-pay .tabs-menu li a.active .custom-progress::-moz-progress-bar, .card-pay .tabs-menu li a.active .custom-progress::-ms-fill {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .card-pay .tabs-menu li a.active {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .page-link:hover {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .page-item.active .page-link {
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .panel-default > .panel-heading {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .panel-primary .list-group-item.active {
+  color: #FFF;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .alert-primary {
+  color: #464a4e;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .alert-primary hr {
+  border-top-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .alert-primary .alert-link {
+  color: #172b46;
+}
+
+.card-pay .tabs-menu li a.active .alert-secondary {
+  color: #464a4e;
+  background-color: #f72d66;
+  border-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .alert-secondary hr {
+  border-top-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .alert-secondary .alert-link {
+  color: #151213;
+}
+
+.card-pay .tabs-menu li a.active .alert-light-primary {
+  color: #f66347;
+  background-color: #fce8e5;
+  border-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .alert-light-secondary {
+  color: #fb1c52;
+  background-color: #f1a5b8;
+  border-color: #f1a5b8;
+}
+
+.card-pay .tabs-menu li a.active .avatar {
+  background: #f66347 no-repeat center/cover;
+}
+
+.card-pay .tabs-menu li a.active .badge-primary {
+  color: #fff;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .badge-primary[href]:hover, .card-pay .tabs-menu li a.active .badge-primary[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .badge-secondary {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .badge-secondary[href]:hover, .card-pay .tabs-menu li a.active .badge-secondary[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .badge-primary-light {
+  color: #f66347;
+  background-color: rgba(0, 98, 205, 0.15);
+}
+
+.card-pay .tabs-menu li a.active .badge-secondary-light {
+  background-color: rgba(250, 113, 59, 0.15) !important;
+  color: #fb1c52;
+}
+
+.card-pay .tabs-menu li a.active .offer-primary {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .offer-primary .shape {
+  border-color: transparent #f66347 transparent transparent;
+}
+
+.card-pay .tabs-menu li a.active .badge-gradient-primary {
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#f38873), to(#f66347));
+  background: linear-gradient(to left, #f38873 0%, #f66347 100%);
+}
+
+.card-pay .tabs-menu li a.active .badge-gradient-secondary {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ed7d98), to(#fb1c52));
+  background-image: linear-gradient(to left, #ed7d98 0%, #fb1c52 100%);
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .breadcrumb-item a, .card-pay .tabs-menu li a.active .breadcrumb-item1 a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .breadcrumb-arrow li a {
+  background-color: #f66347;
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .breadcrumb-arrow li a:before {
+  border-left-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .btn-primary {
+  color: #fff !important;
+  background-color: #f66347;
+  border-color: #f66347;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(0, 98, 205, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(0, 98, 205, 0.5);
+}
+
+.card-pay .tabs-menu li a.active .btn-primary:hover {
+  color: #fff !important;
+  background-color: #f8694e;
+  border-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .btn-primary:focus, .card-pay .tabs-menu li a.active .btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.5);
+          box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.5);
+  background-color: #f8694e;
+  border-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .btn-primary.disabled, .card-pay .tabs-menu li a.active .btn-primary:disabled {
+  color: #fff;
+  background-color: #f8694e;
+  border-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .btn-primary:not(:disabled):not(.disabled):active, .card-pay .tabs-menu li a.active .btn-primary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #f8694e;
+  border-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #f8694e;
+  border-color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .btn-primary:not(:disabled):not(.disabled):active:focus, .card-pay .tabs-menu li a.active .btn-primary:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.1);
+          box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.1);
+          box-shadow: 0 0 0 2px rgba(0, 98, 205, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary {
+  color: #fff !important;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(251, 28, 82, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(251, 28, 82, 0.5);
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary:hover {
+  color: #fff !important;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary:focus, .card-pay .tabs-menu li a.active .btn-secondary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+          box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary.disabled, .card-pay .tabs-menu li a.active .btn-secondary:disabled {
+  color: #fff;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary:not(:disabled):not(.disabled):active, .card-pay .tabs-menu li a.active .btn-secondary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.card-pay .tabs-menu li a.active .btn-secondary:not(:disabled):not(.disabled):active:focus, .card-pay .tabs-menu li a.active .btn-secondary:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+          box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+          box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary {
+  color: #f66347;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f66347;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(112, 94, 200, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(112, 94, 200, 0.5);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary:focus, .card-pay .tabs-menu li a.active .btn-outline-primary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.1);
+          box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary.disabled, .card-pay .tabs-menu li a.active .btn-outline-primary:disabled {
+  color: #f66347;
+  background-color: transparent;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary:not(:disabled):not(.disabled):active, .card-pay .tabs-menu li a.active .btn-outline-primary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .card-pay .tabs-menu li a.active .btn-outline-primary:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-outline-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary {
+  color: #fb1c52;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fb1c52;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(242, 46, 105, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(242, 46, 105, 0.5);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary:focus, .card-pay .tabs-menu li a.active .btn-outline-secondary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary.disabled, .card-pay .tabs-menu li a.active .btn-outline-secondary:disabled {
+  color: #fb1c52;
+  background-color: transparent;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary:not(:disabled):not(.disabled):active, .card-pay .tabs-menu li a.active .btn-outline-secondary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-outline-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+}
+
+.card-pay .tabs-menu li a.active .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .card-pay .tabs-menu li a.active .btn-outline-secondary:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .show > .btn-outline-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.card-pay .tabs-menu li a.active .btn-link {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .btn-link:hover {
+  color: #f8694e;
+}
+
+.card-pay .tabs-menu li a.active .dropdown-item:hover, .card-pay .tabs-menu li a.active .dropdown-item:focus {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .btn.dropdown-toggle.btn-primary ~ .dropdown-menu .dropdown-plus-title {
+  border-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-primary {
+  color: #f66347;
+  background-color: #cbdbf2;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-primary.list-group-item-action:hover, .card-pay .tabs-menu li a.active .list-group-item-primary.list-group-item-action:focus {
+  color: #f66347;
+  background-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-primary.list-group-item-action.active {
+  color: #fff;
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-secondary {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-secondary.list-group-item-action:hover, .card-pay .tabs-menu li a.active .list-group-item-secondary.list-group-item-action:focus {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .list-group-item-secondary.list-group-item-action.active {
+  color: #fff;
+  background-color: #f72d66;
+  border-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .nav-pills .nav-link.active, .card-pay .tabs-menu li a.active .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .user-button {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .user-button:hover {
+  border: 1px solid #f66347;
+  background: #fff;
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .nav-tabs .nav-item1 .nav-link:hover:not(.disabled), .card-pay .tabs-menu li a.active .nav-tabs .nav-item1 .nav-link.active {
+  color: #fff;
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .nav-tabs .nav-link.active {
+  color: #fff;
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .header .nav-tabs .nav-link:hover:not(.disabled), .card-pay .tabs-menu li a.active .header .nav-tabs .nav-link.active {
+  color: #fff !important;
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .expanel-primary {
+  border: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .expanel-secondary {
+  border: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .expanel-primary > .expanel-heading {
+  color: #fff !important;
+  background-color: #f66347 !important;
+  border-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .expanel-secondary > .expanel-heading {
+  color: #fff !important;
+  background-color: #f72d66 !important;
+  border-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .tag-primary {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .tag-secondary {
+  background-color: #f72d66;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .pop-primary {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popsecondary {
+  color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-primary .tooltip-inner {
+  background-color: #f66347 !important;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-top .arrow::before, .card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-bottom .arrow::before, .card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-left .arrow::before, .card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-right .arrow::before, .card-pay .tabs-menu li a.active .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-secondary .tooltip-inner {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-top .arrow::before, .card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-bottom .arrow::before, .card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-left .arrow::before, .card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-right .arrow::before, .card-pay .tabs-menu li a.active .tooltip-secondary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popover-head-primary .popover-header {
+  color: #fff;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popover-head-primary.bs-popover-bottom .arrow::after, .card-pay .tabs-menu li a.active .popover-head-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popover-head-secondary .popover-header {
+  color: #fff;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popover-head-secondary.bs-popover-bottom .arrow::after, .card-pay .tabs-menu li a.active .popover-head-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .popover-primary {
+  background-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-primary.bs-popover-top .arrow::after, .card-pay .tabs-menu li a.active .popover-primary.bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-top-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-primary.bs-popover-bottom .arrow::after, .card-pay .tabs-menu li a.active .popover-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-primary.bs-popover-left .arrow::after, .card-pay .tabs-menu li a.active .popover-primary.bs-popover-auto[x-placement^="left"] .arrow::after {
+  border-left-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-primary.bs-popover-right .arrow::after, .card-pay .tabs-menu li a.active .popover-primary.bs-popover-auto[x-placement^="right"] .arrow::after {
+  border-right-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-secondary {
+  background-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-secondary.bs-popover-top .arrow::after, .card-pay .tabs-menu li a.active .popover-secondary.bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-top-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-secondary.bs-popover-bottom .arrow::after, .card-pay .tabs-menu li a.active .popover-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-secondary.bs-popover-left .arrow::after, .card-pay .tabs-menu li a.active .popover-secondary.bs-popover-auto[x-placement^="left"] .arrow::after {
+  border-left-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .popover-secondary.bs-popover-right .arrow::after, .card-pay .tabs-menu li a.active .popover-secondary.bs-popover-auto[x-placement^="right"] .arrow::after {
+  border-right-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active .heading-primary {
+  background-color: #f66347 !important;
+  color: #ffffff;
+}
+
+.card-pay .tabs-menu li a.active .dark-mode .popover-primary .popover-header {
+  background-color: #f66347 !important;
+  color: #ffffff;
+}
+
+.card-pay .tabs-menu li a.active .dark-mode .popover-secondary .popover-header {
+  background-color: #f72d66 !important;
+  color: #ffffff;
+}
+
+.card-pay .tabs-menu li a.active .message-feed.right .mf-content {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .message-feed.right .mf-content:before {
+  border-bottom: 8px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ms-menu .tab-menu-heading .tabs-menu1 ul li .active {
+  background: #f66347;
+  color: #fff;
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .chat .msg_cotainer_send {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .chat .msg_cotainer_send:after {
+  border-bottom: 10px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .action-header {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-nav-line-chat .nav-link.active {
+  color: #ffffff;
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-chat-header .nav-link:hover, .card-pay .tabs-menu li a.active .main-chat-header .nav-link:focus {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-chat-body .media.flex-row-reverse .main-msg-wrapper {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .main-chat-body .media.flex-row-reverse .main-msg-wrapper:before {
+  border-bottom: 7px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-contact-item.selected {
+  border-left-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-contact-info-header .main-img-user a:hover, .card-pay .tabs-menu li a.active .main-contact-info-header .main-img-user a:focus {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-contact-info-header .media-body .nav-link:hover, .card-pay .tabs-menu li a.active .main-contact-info-header .media-body .nav-link:focus {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .main-contact-action a:hover, .card-pay .tabs-menu li a.active .main-contact-action a:focus {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .jsr_bar {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .jsr_slider::before {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .range.range-primary input[type="range"]::-webkit-slider-thumb, .card-pay .tabs-menu li a.active .range.range-primary input[type="range"]::-moz-slider-thumb {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .range.range-primary output {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .range.range-primary input[type="range"] {
+  outline-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-horizontal .br-widget a.br-active, .card-pay .tabs-menu li a.active .br-theme-bars-horizontal .br-widget a.br-selected {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-horizontal .br-widget .br-current-rating {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-pill .br-widget a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-pill .br-widget a.br-active, .card-pay .tabs-menu li a.active .br-theme-bars-pill .br-widget a.br-selected {
+  background-color: #f66347;
+  color: white;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-square .br-widget a.br-active, .card-pay .tabs-menu li a.active .br-theme-bars-square .br-widget a.br-selected {
+  border: 2px solid #f66347;
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-movie .br-widget a.br-active, .card-pay .tabs-menu li a.active .br-theme-bars-movie .br-widget a.br-selected {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-1to10 .br-widget a.br-active, .card-pay .tabs-menu li a.active .br-theme-bars-1to10 .br-widget a.br-selected {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-1to10 .br-widget .br-current-rating {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .br-theme-bars-movie .br-widget .br-current-rating {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .header-bg {
+  background: #f66347;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#f38873), to(#f66347));
+  background: linear-gradient(to left, #f38873 0%, #f66347 100%);
+}
+
+.card-pay .tabs-menu li a.active .footer a:not(.btn) {
+  color: #f66347;
+}
+
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .card-pay .tabs-menu li a.active .search-show .search-element {
+    background: #f66347;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-pay .tabs-menu li a.active .search-show .search-element {
+    background: #f66347;
+  }
+}
+
+.card-pay .tabs-menu li a.active .wizard-card .moving-tab {
+  background-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .form-group label.control-label {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard-card .choice:hover .icon, .card-pay .tabs-menu li a.active .wizard-card .choice.active .icon {
+  border-color: #f66347 !important;
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .addui-slider .addui-slider-track .addui-slider-range, .card-pay .tabs-menu li a.active .addui-slider .addui-slider-track .addui-slider-handle:after {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-table .header-days {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-table tr .day.today, .card-pay .tabs-menu li a.active .cal1 .clndr .clndr-table tr .day.my-today {
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .fc-event, .card-pay .tabs-menu li a.active .fc-event-dot {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .fc-toolbar .fc-state-active, .card-pay .tabs-menu li a.active .fc-toolbar .ui-state-active {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active div.conv-form-wrapper div.options div.option {
+  border: 1px solid #f66347;
+  background: #fff;
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active form.convFormDynamic button.submit {
+  color: #f66347;
+  border: 1px solid #f66347;
+  background: #fff;
+}
+
+.card-pay .tabs-menu li a.active div.conv-form-wrapper div.options div.option.selected {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active div.conv-form-wrapper div.options div.option.selected:hover {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active form.convFormDynamic button.submit:hover, .card-pay .tabs-menu li a.active div.conv-form-wrapper div#messages div.message.from {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active #sidebar ul li.active > a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .accordionjs .acc_section.acc_active > .acc_head {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .tab_wrapper > ul li.active {
+  border-color: #f66347 !important;
+  background: #f66347 !important;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .tab_wrapper.right_side > ul li.active:after {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active #sidebar li a[aria-expanded="true"], .card-pay .tabs-menu li a.active #sidebar li a.active {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .sweet-alert button {
+  background-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .timeline__item:after {
+  border: 6px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .job-box-filter a.filtsec i {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .search-inline button[type="submit"] {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sw-theme-dots .nav-tabs .nav-link:hover:not(.disabled) {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .card-bgimg:before {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .card-custom-icon.text-primary {
+  fill: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .feature .feature-icon {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .under-countdown .countdown {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before, .card-pay .tabs-menu li a.active table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .social-profile-buttons li a i, .card-pay .tabs-menu li a.active .footer .social .social-icon {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .page-leftheader .breadcrumb-item.active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .page-leftheader .breadcrumb-item.active a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .dot1, .card-pay .tabs-menu li a.active .dot2, .card-pay .tabs-menu li a.active .spinner4 > div, .card-pay .tabs-menu li a.active .sk-circle .sk-child:before {
+  background: -webkit-gradient(linear, left top, right top, from(#f66347), to(#f66347));
+}
+
+.card-pay .tabs-menu li a.active .sk-cube-grid .sk-cube {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sk-folding-cube .sk-cube:before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .spinner5 > div {
+  background: -webkit-gradient(linear, left top, right top, from(#f66347), to(#f66347));
+}
+
+.card-pay .tabs-menu li a.active .spinner {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .spinner-lg {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .double-bounce1, .card-pay .tabs-menu li a.active .double-bounce2 {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cube1, .card-pay .tabs-menu li a.active .cube2 {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .lds-heart div {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .lds-heart div:after, .card-pay .tabs-menu li a.active .lds-heart div:before {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .lds-ring div {
+  border: 6px solid #f66347;
+  border-color: #f66347 transparent transparent transparent;
+}
+
+.card-pay .tabs-menu li a.active .lds-hourglass:after {
+  border: 26px solid #f66347;
+  border-color: #f66347 transparent;
+}
+
+.card-pay .tabs-menu li a.active .table-primary {
+  background-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .table-primary > th, .card-pay .tabs-menu li a.active .table-primary > td {
+  background-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .table-hover .table-primary:hover {
+  background-color: #f0f0f2;
+}
+
+.card-pay .tabs-menu li a.active .table-hover .table-primary:hover > td, .card-pay .tabs-menu li a.active .table-hover .table-primary:hover > th {
+  background-color: #fce8e5;
+}
+
+.card-pay .tabs-menu li a.active .table-secondary {
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .table-secondary > th, .card-pay .tabs-menu li a.active .table-secondary > td {
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .table-hover .table-secondary:hover {
+  background-color: #cfd2d6;
+}
+
+.card-pay .tabs-menu li a.active .table-hover .table-secondary:hover > td, .card-pay .tabs-menu li a.active .table-hover .table-secondary:hover > th {
+  background-color: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .mediaicon {
+  border: 1px solid #f66347;
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active a.chip:hover {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active #back-to-top {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active #back-to-top:hover {
+  color: #f66347;
+  border: 2px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tabs-menu ul li .active {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .tabs-menu1 ul li .active {
+  border-bottom: 3px solid #f66347;
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sub-panel-heading .tabs-menu ul li a.active {
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .receipts-inline-table .tabs-menu1 ul li .active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .timeline__item:after {
+  border: 6px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-select:focus {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-file-label::after {
+  background-color: #f66347;
+  border-left: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-range::-ms-thumb, .card-pay .tabs-menu li a.active .custom-range::-webkit-slider-thumb, .card-pay .tabs-menu li a.active .custom-range::-moz-range-thumb {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ui-datepicker .ui-datepicker-title {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ui-datepicker .ui-datepicker-calendar td a:hover, .card-pay .tabs-menu li a.active .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .form-control:focus {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard > .steps .current a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard > .steps .current a:hover, .card-pay .tabs-menu li a.active .wizard > .steps .current a:active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard > .steps .current a .number, .card-pay .tabs-menu li a.active .wizard > .steps .current a:hover .number, .card-pay .tabs-menu li a.active .wizard > .steps .current a:active .number {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .wizard > .actions a {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard > .actions a:hover, .card-pay .tabs-menu li a.active .wizard > .actions a:active {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .wizard-style-1 > .steps > ul .current a .number, .card-pay .tabs-menu li a.active .wizard-style-1 > .steps > ul .current a:hover .number, .card-pay .tabs-menu li a.active .wizard-style-1 > .steps > ul .current a:active .number {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .wizard-style-2 > .steps > ul .current a .number, .card-pay .tabs-menu li a.active .wizard-style-2 > .steps > ul .current a:hover .number, .card-pay .tabs-menu li a.active .wizard-style-2 > .steps > ul .current a:active .number {
+  border-color: #f66347;
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .selectgroup-input:checked + .selectgroup-button, .card-pay .tabs-menu li a.active .selectgroup-input:focus + .selectgroup-button {
+  border-color: #f66347;
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-switch-input:checked ~ .custom-switch-indicator {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .custom-switch-input:focus ~ .custom-switch-indicator {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .label-primary {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .bg-primary {
+  background-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active a.bg-primary:hover, .card-pay .tabs-menu li a.active a.bg-primary:focus {
+  background-color: #f8694e !important;
+}
+
+.card-pay .tabs-menu li a.active button.bg-primary:hover, .card-pay .tabs-menu li a.active button.bg-primary:focus {
+  background-color: #f8694e !important;
+}
+
+.card-pay .tabs-menu li a.active .bg-secondary {
+  background-color: #fa057a !important;
+}
+
+.card-pay .tabs-menu li a.active a.bg-secondary:hover, .card-pay .tabs-menu li a.active a.bg-secondary:focus {
+  background-color: #fa057a !important;
+}
+
+.card-pay .tabs-menu li a.active button.bg-secondary:hover, .card-pay .tabs-menu li a.active button.bg-secondary:focus {
+  background-color: #fa057a !important;
+}
+
+.card-pay .tabs-menu li a.active .bg-gradient-primary {
+  background: -webkit-gradient(linear, right top, left top, from(#f38873), to(#f66347));
+  background: linear-gradient(to left, #f38873 0%, #f66347 100%);
+}
+
+.card-pay .tabs-menu li a.active .border-primary {
+  border-color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .border-secondary {
+  border-color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active i.fa.round, .card-pay .tabs-menu li a.active .list-icon span p {
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .text-primary {
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active a.text-primary:hover, .card-pay .tabs-menu li a.active a.text-primary:focus {
+  color: #f8694e !important;
+}
+
+.card-pay .tabs-menu li a.active .text-secondary {
+  color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active a.text-secondary:hover, .card-pay .tabs-menu li a.active a.text-secondary:focus {
+  color: #f72d66 !important;
+}
+
+.card-pay .tabs-menu li a.active pre {
+  border-left: 3px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .bg-primary-transparent {
+  background-color: rgba(0, 98, 205, 0.2);
+}
+
+.card-pay .tabs-menu li a.active .bg-secondary-transparent {
+  background-color: rgba(247, 45, 102, 0.2);
+}
+
+.card-pay .tabs-menu li a.active .bg-primary-transparent-2 {
+  background-color: rgba(250, 5, 122, 0.15);
+}
+
+.card-pay .tabs-menu li a.active .bg-secondary-transparent-2 {
+  background-color: rgba(247, 45, 102, 0.15);
+}
+
+.card-pay .tabs-menu li a.active .card-header:before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .panel.price > .panel-heading {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .pricing-tabs ul.nav-price li a.active, .card-pay .tabs-menu li a.active .pricing-tabs .pri-tabs-heading2 ul.nav-price li a.active {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .icon-dropshadow-secondary {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(247, 45, 102, 0.3));
+          filter: drop-shadow(0px 4px 4px rgba(247, 45, 102, 0.3));
+}
+
+.card-pay .tabs-menu li a.active .card-custom-icon.text-secondary, .card-pay .tabs-menu li a.active .fill-secondary {
+  fill: #f72d66;
+}
+
+.card-pay .tabs-menu li a.active .tree li i {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .timeline .timeline-items .timeline-item::after {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active li.ui-timepicker-selected {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .ui-timepicker-list li:hover, .card-pay .tabs-menu li a.active .ui-timepicker-list .ui-timepicker-selected:hover {
+  background: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .SumoSelect:focus > .CaptionCont {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .SumoSelect > .optWrapper.multiple.okCancelInMulti > .MultiControls > p:focus {
+  border-color: #f66347;
+  outline: none;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .SumoSelect > .optWrapper.multiple > .options li.opt.selected span i {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .SumoSelect .select-all.selected > span i, .card-pay .tabs-menu li a.active .SumoSelect .select-all.partial > span i {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #f66347;
+  color: white;
+}
+
+.card-pay .tabs-menu li a.active .ql-editor .ql-bg-blue {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:hover, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:hover, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:focus, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:focus, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button.ql-active, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button.ql-active, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label:hover, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label:hover, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label.ql-active, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label.ql-active, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item:hover, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item:hover, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #f66347;
+  outline: 0;
+  background: #fff;
+}
+
+.card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:focus .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:focus .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button.ql-active .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button.ql-active .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:focus .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:focus .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button.ql-active .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button.ql-active .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button:focus .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button:focus .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .card-pay .tabs-menu li a.active .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ql-snow a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .ms-choice {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .checkbox-group .checkbox-normal:checked + label:before {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-from, .card-pay .tabs-menu li a.active .irs-to, .card-pay .tabs-menu li a.active .irs-single {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-bar, .card-pay .tabs-menu li a.active .irs-bar-edge {
+  background-image: none;
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-from::after, .card-pay .tabs-menu li a.active .irs-to::after, .card-pay .tabs-menu li a.active .irs-single::after {
+  border-top-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-slider:before, .card-pay .tabs-menu li a.active .irs-slider:hover:before, .card-pay .tabs-menu li a.active .irs-slider:focus:before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-primary .irs-bar, .card-pay .tabs-menu li a.active .irs-primary .irs-bar-edge, .card-pay .tabs-menu li a.active .irs-primary .irs-slider::before, .card-pay .tabs-menu li a.active .irs-primary .irs-from, .card-pay .tabs-menu li a.active .irs-primary .irs-to, .card-pay .tabs-menu li a.active .irs-primary .irs-single {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-primary .irs-from::after, .card-pay .tabs-menu li a.active .irs-primary .irs-to::after, .card-pay .tabs-menu li a.active .irs-primary .irs-single::after {
+  border-top-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-modern .irs-slider {
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-modern .irs-slider::before {
+  border-left: 1px solid #f66347;
+  border-right: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-modern.irs-primary .irs-slider {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-modern.irs-primary .irs-slider::before {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline .irs-line {
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline .irs-slider {
+  border: 1px solid #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline .irs-slider:hover::before, .card-pay .tabs-menu li a.active .irs-outline .irs-slider:focus::before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-line, .card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-slider {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-line:hover::before, .card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-line:focus::before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-slider:hover::before, .card-pay .tabs-menu li a.active .irs-outline.irs-primary .irs-slider:focus::before {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .cropme-slider input::-webkit-slider-thumb, .card-pay .tabs-menu li a.active .cropme-rotation-slider input::-webkit-slider-thumb {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .fc button {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sw-theme-dots > ul.step-anchor > li > a:before {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sw-theme-dots > ul.step-anchor > li.active > a {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sw-theme-dots > ul.step-anchor > li.active > a:after {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .theme-white .cookie-popup-accept-cookies, .card-pay .tabs-menu li a.active .theme-light .cookie-popup-accept-cookies, .card-pay .tabs-menu li a.active .theme-primary .cookie-popup {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .daterangepicker td.active {
+  background-color: #f66347;
+  border-color: transparent;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .daterangepicker td.active:hover {
+  background-color: #f66347;
+  border-color: transparent;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .daterangepicker .ranges li.active {
+  background-color: #f66347;
+  color: #fff;
+}
+
+.card-pay .tabs-menu li a.active .hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > a:hover, .card-pay .tabs-menu li a.active .hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a:hover {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a:hover, .card-pay .tabs-menu li a.active .hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a.active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a.active, .card-pay .tabs-menu li a.active .hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > a.active {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .sub-menu li.active:before, .card-pay .tabs-menu li a.active .sub-menu li:hover:before {
+  color: #f66347;
+  opacity: 0.9;
+}
+
+.card-pay .tabs-menu li a.active .mega-menubg li a.active:before, .card-pay .tabs-menu li a.active .mega-menubg li a:hover:before {
+  color: #f66347;
+  opacity: 0.9;
+}
+
+.card-pay .tabs-menu li a.active .app-sidebar__toggle:hover {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .slide-menu a.active {
+  color: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .slide-item.active, .card-pay .tabs-menu li a.active .slide-item:hover, .card-pay .tabs-menu li a.active .slide-item:focus {
+  color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .slide.is-expanded .slide-menu li a:hover {
+  color: #f66347;
+}
+
+@media (min-width: 768px) {
+  .card-pay .tabs-menu li a.active .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-menu a.active {
+    color: #f66347;
+    background: #fff;
+  }
+  .card-pay .tabs-menu li a.active .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-item.active {
+    color: #f66347;
+  }
+  .card-pay .tabs-menu li a.active .slide-item:hover, .card-pay .tabs-menu li a.active .slide-item:focus {
+    color: #f66347;
+  }
+  .card-pay .tabs-menu li a.active .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-item.active {
+    color: #f66347;
+    background: #fff;
+  }
+}
+
+.card-pay .tabs-menu li a.active .onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #f66347;
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .onoffswitch2-checkbox:checked + .onoffswitch2-label {
+  background-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .onoffswitch2-checkbox:checked + .onoffswitch-label2, .card-pay .tabs-menu li a.active .onoffswitch2-checkbox:checked + .onoffswitch2-label:before {
+  border-color: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .header-brand-img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.card-pay .tabs-menu li a.active .color-hor-header .header {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .color-menu .app-sidebar, .card-pay .tabs-menu li a.active .color-menu .app-sidebar__logo {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-menu .app-sidebar__logo {
+  background: #f56a4f !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-hor-header .header {
+  background: -webkit-gradient(linear, right top, left top, from(#f38873), to(#f66347));
+  background: linear-gradient(to left, #f38873 0%, #f66347 100%);
+}
+
+.card-pay .tabs-menu li a.active .color-hor-menu .horizontal-main.hor-menu {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-hor-menu .horizontalMenu > .horizontalMenu-list {
+  background: #f66347 !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-hor-menu .horizontal-main.hor-menu {
+  background: -webkit-gradient(linear, right top, left top, from(#f38873), to(#f66347)) !important;
+  background: linear-gradient(to left, #f38873 0%, #f66347 100%) !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-hor-menu .horizontalMenu > .horizontalMenu-list {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f38873), to(#f66347)) !important;
+  background: linear-gradient(to top, #f38873 0%, #f66347 100%) !important;
+}
+
+.card-pay .tabs-menu li a.active .gradient-menu .app-sidebar {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f38873), to(#f66347)) !important;
+  background: linear-gradient(to top, #f38873 0%, #f66347 100%) !important;
+}
+
+.card-pay .tabs-menu li a.active .color-menu .side-menu .side-menu__icon, .card-pay .tabs-menu li a.active .color-menu .sidebar-navs a, .card-pay .tabs-menu li a.active .color-menu.sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .side-menu__icon {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .color-hor-header .nav-link.icon .header-icon, .card-pay .tabs-menu li a.active .color-hor-header .app-sidebar__toggle .header-icon {
+  background: #f66347;
+}
+
+.card-pay .tabs-menu li a.active .color-hor-menu .hor-icon {
+  background: #f66347;
+}
+
+.page-link:hover {
+  color: #06bfd3;
+}
+
+.page-item.active .page-link {
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.panel-default > .panel-heading {
+  color: #06bfd3;
+}
+
+.panel-primary .list-group-item.active {
+  color: #FFF;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.alert-primary {
+  color: #464a4e;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.alert-primary hr {
+  border-top-color: #e3f9fc;
+}
+
+.alert-primary .alert-link {
+  color: #172b46;
+}
+
+.alert-secondary {
+  color: #464a4e;
+  background-color: #f72d66;
+  border-color: #f72d66;
+}
+
+.alert-secondary hr {
+  border-top-color: #f72d66;
+}
+
+.alert-secondary .alert-link {
+  color: #151213;
+}
+
+.alert-light-primary {
+  color: #06bfd3;
+  background-color: #e3f9fc;
+  border-color: #e3f9fc;
+}
+
+.alert-light-secondary {
+  color: #fb1c52;
+  background-color: #f1a5b8;
+  border-color: #f1a5b8;
+}
+
+.avatar {
+  background: #06bfd3 no-repeat center/cover;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #06bfd3;
+}
+
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #09cce1;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.badge-secondary[href]:hover, .badge-secondary[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f72d66;
+}
+
+.badge-primary-light {
+  color: #06bfd3;
+  background-color: rgba(6, 191, 211, 0.15);
+}
+
+.badge-secondary-light {
+  background-color: rgba(250, 113, 59, 0.15) !important;
+  color: #fb1c52;
+}
+
+.offer-primary {
+  border-color: #06bfd3;
+}
+
+.offer-primary .shape {
+  border-color: transparent #06bfd3 transparent transparent;
+}
+
+.badge-gradient-primary {
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#43d799), to(#06bfd3));
+  background: linear-gradient(to left, #43d799 0%, #06bfd3 100%);
+}
+
+.badge-gradient-secondary {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ed7d98), to(#fb1c52));
+  background-image: linear-gradient(to left, #ed7d98 0%, #fb1c52 100%);
+  color: #fff;
+}
+
+.breadcrumb-item a {
+  color: #06bfd3;
+}
+
+.breadcrumb-item1 a {
+  color: #06bfd3;
+}
+
+.breadcrumb-arrow li a {
+  background-color: #06bfd3;
+  border: 1px solid #06bfd3;
+}
+
+.breadcrumb-arrow li a:before {
+  border-left-color: #06bfd3;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(6, 191, 211, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(6, 191, 211, 0.5);
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #09cce1;
+  border-color: #09cce1;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(6, 191, 211, 0.5);
+          box-shadow: 0 0 0 2px rgba(6, 191, 211, 0.5);
+  background-color: #09cce1;
+  border-color: #09cce1;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #09cce1;
+  border-color: #09cce1;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #09cce1;
+  border-color: #09cce1;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(6, 191, 211, 0.1);
+          box-shadow: 0 0 0 2px rgba(6, 191, 211, 0.1);
+}
+
+.btn-secondary {
+  color: #fff !important;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(251, 28, 82, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(251, 28, 82, 0.5);
+}
+
+.btn-secondary:hover {
+  color: #fff !important;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+          box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #fff;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #f83e6b;
+  border-color: #f83e6b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+          box-shadow: 0 0 0 2px rgba(251, 28, 82, 0.1);
+}
+
+.btn-outline-primary {
+  color: #06bfd3;
+  background-color: transparent;
+  background-image: none;
+  border-color: #06bfd3;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(112, 94, 200, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(112, 94, 200, 0.5);
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.1);
+          box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.1);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #06bfd3;
+  background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.btn-outline-secondary {
+  color: #fb1c52;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fb1c52;
+  -webkit-box-shadow: 0 0px 10px -5px rgba(242, 46, 105, 0.5);
+          box-shadow: 0 0px 10px -5px rgba(242, 46, 105, 0.5);
+}
+
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+}
+
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+  color: #fb1c52;
+  background-color: transparent;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #fb1c52;
+  border-color: #fb1c52;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+          box-shadow: 0 0 0 2px rgba(247, 45, 102, 0.1);
+}
+
+.btn-link {
+  color: #06bfd3;
+}
+
+.btn-link:hover {
+  color: #09cce1;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #06bfd3;
+}
+
+.btn.dropdown-toggle.btn-primary ~ .dropdown-menu .dropdown-plus-title {
+  border-color: #06bfd3 !important;
+}
+
+.list-group-item-primary {
+  color: #06bfd3;
+  background-color: #cbdbf2;
+}
+
+.list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
+  color: #06bfd3;
+  background-color: #e3f9fc;
+}
+
+.list-group-item-primary.list-group-item-action.active {
+  color: #fff;
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.list-group-item-secondary {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
+  color: #fff;
+  background-color: #f72d66;
+}
+
+.list-group-item-secondary.list-group-item-action.active {
+  color: #fff;
+  background-color: #f72d66;
+  border-color: #f72d66;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #06bfd3;
+}
+
+.user-button {
+  background: #06bfd3;
+}
+
+.user-button:hover {
+  border: 1px solid #06bfd3;
+  background: #fff;
+  color: #06bfd3 !important;
+}
+
+.nav-tabs .nav-item1 .nav-link:hover:not(.disabled) {
+  color: #fff;
+  background: #06bfd3;
+}
+
+.nav-tabs .nav-item1 .nav-link.active {
+  color: #fff;
+  background: #06bfd3;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: #06bfd3;
+}
+
+.header .nav-tabs .nav-link:hover:not(.disabled) {
+  color: #fff !important;
+  background: #06bfd3;
+}
+
+.header .nav-tabs .nav-link.active {
+  color: #fff !important;
+  background: #06bfd3;
+}
+
+.expanel-primary {
+  border: #06bfd3 !important;
+}
+
+.expanel-secondary {
+  border: #f72d66 !important;
+}
+
+.expanel-primary > .expanel-heading {
+  color: #fff !important;
+  background-color: #06bfd3 !important;
+  border-color: #06bfd3 !important;
+}
+
+.expanel-secondary > .expanel-heading {
+  color: #fff !important;
+  background-color: #f72d66 !important;
+  border-color: #f72d66 !important;
+}
+
+.tag-primary {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.tag-secondary {
+  background-color: #f72d66;
+  color: #fff;
+}
+
+.pop-primary {
+  color: #06bfd3;
+}
+
+.popsecondary {
+  color: #f72d66;
+}
+
+.tooltip-primary .tooltip-inner {
+  background-color: #06bfd3 !important;
+  color: #fff;
+}
+
+.tooltip-primary.bs-tooltip-top .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #06bfd3;
+}
+
+.tooltip-primary.bs-tooltip-bottom .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #06bfd3;
+}
+
+.tooltip-primary.bs-tooltip-left .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #06bfd3;
+}
+
+.tooltip-primary.bs-tooltip-right .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #06bfd3;
+}
+
+.tooltip-secondary .tooltip-inner {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.tooltip-secondary.bs-tooltip-top .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="top"] .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #06bfd3;
+}
+
+.tooltip-secondary.bs-tooltip-bottom .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #06bfd3;
+}
+
+.tooltip-secondary.bs-tooltip-left .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="left"] .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #06bfd3;
+}
+
+.tooltip-secondary.bs-tooltip-right .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="right"] .arrow::before, .tooltip-secondary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #06bfd3;
+}
+
+.popover-head-primary .popover-header {
+  color: #fff;
+  background-color: #06bfd3;
+}
+
+.popover-head-primary.bs-popover-bottom .arrow::after, .popover-head-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover-head-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #06bfd3;
+}
+
+.popover-head-secondary .popover-header {
+  color: #fff;
+  background-color: #06bfd3;
+}
+
+.popover-head-secondary.bs-popover-bottom .arrow::after, .popover-head-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover-head-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #06bfd3;
+}
+
+.popover-primary {
+  background-color: #06bfd3 !important;
+}
+
+.popover-primary.bs-popover-top .arrow::after, .popover-primary.bs-popover-auto[x-placement^="top"] .arrow::after, .popover-primary.bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-top-color: #06bfd3 !important;
+}
+
+.popover-primary.bs-popover-bottom .arrow::after, .popover-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #06bfd3 !important;
+}
+
+.popover-primary.bs-popover-left .arrow::after, .popover-primary.bs-popover-auto[x-placement^="left"] .arrow::after, .popover-primary.bs-popover-auto[x-placement^="left"] .arrow::after {
+  border-left-color: #06bfd3 !important;
+}
+
+.popover-primary.bs-popover-right .arrow::after, .popover-primary.bs-popover-auto[x-placement^="right"] .arrow::after, .popover-primary.bs-popover-auto[x-placement^="right"] .arrow::after {
+  border-right-color: #06bfd3 !important;
+}
+
+.popover-secondary {
+  background-color: #f72d66 !important;
+}
+
+.popover-secondary.bs-popover-top .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="top"] .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-top-color: #f72d66 !important;
+}
+
+.popover-secondary.bs-popover-bottom .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: #f72d66 !important;
+}
+
+.popover-secondary.bs-popover-left .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="left"] .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="left"] .arrow::after {
+  border-left-color: #f72d66 !important;
+}
+
+.popover-secondary.bs-popover-right .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="right"] .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="right"] .arrow::after {
+  border-right-color: #f72d66 !important;
+}
+
+.heading-primary {
+  background-color: #06bfd3 !important;
+  color: #ffffff;
+}
+
+.dark-mode .popover-primary .popover-header {
+  background-color: #06bfd3 !important;
+  color: #ffffff;
+}
+
+.dark-mode .popover-secondary .popover-header {
+  background-color: #f72d66 !important;
+  color: #ffffff;
+}
+
+.message-feed.right .mf-content {
+  background: #06bfd3;
+}
+
+.message-feed.right .mf-content:before {
+  border-bottom: 8px solid #06bfd3;
+}
+
+.ms-menu .tab-menu-heading .tabs-menu1 ul li .active {
+  background: #06bfd3;
+  color: #fff;
+  border: 1px solid #06bfd3;
+}
+
+.chat .msg_cotainer_send:after {
+  border-bottom: 10px solid #06bfd3;
+}
+
+.chat .msg_cotainer_send {
+  background-color: #06bfd3;
+}
+
+.action-header {
+  background: #06bfd3;
+}
+
+.main-nav-line-chat .nav-link.active {
+  color: #ffffff;
+  background: #06bfd3;
+}
+
+.main-chat-header .nav-link:hover, .main-chat-header .nav-link:focus {
+  color: #06bfd3;
+}
+
+.main-chat-body .media.flex-row-reverse .main-msg-wrapper {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.main-chat-body .media.flex-row-reverse .main-msg-wrapper:before {
+  border-bottom: 7px solid #06bfd3;
+}
+
+.main-contact-item.selected {
+  border-left-color: #06bfd3;
+}
+
+.main-contact-info-header .main-img-user a:hover, .main-contact-info-header .main-img-user a:focus {
+  background-color: #06bfd3;
+}
+
+.main-contact-info-header .media-body .nav-link:hover, .main-contact-info-header .media-body .nav-link:focus {
+  color: #06bfd3;
+}
+
+.main-contact-action a:hover, .main-contact-action a:focus {
+  color: #06bfd3;
+}
+
+.jsr_bar {
+  background-color: #06bfd3;
+}
+
+.jsr_slider::before {
+  background: #06bfd3;
+}
+
+.range.range-primary input[type="range"]::-webkit-slider-thumb {
+  background-color: #06bfd3;
+}
+
+.range.range-primary input[type="range"]::-moz-slider-thumb {
+  background-color: #06bfd3;
+}
+
+.range.range-primary output {
+  background-color: #06bfd3;
+}
+
+.range.range-primary input[type="range"] {
+  outline-color: #06bfd3;
+}
+
+.br-theme-bars-horizontal .br-widget a.br-active, .br-theme-bars-horizontal .br-widget a.br-selected {
+  background-color: #06bfd3;
+}
+
+.br-theme-bars-horizontal .br-widget .br-current-rating {
+  color: #06bfd3;
+}
+
+.br-theme-bars-pill .br-widget a {
+  color: #06bfd3;
+}
+
+.br-theme-bars-pill .br-widget a.br-active, .br-theme-bars-pill .br-widget a.br-selected {
+  background-color: #06bfd3;
+  color: white;
+}
+
+.br-theme-bars-square .br-widget a.br-active, .br-theme-bars-square .br-widget a.br-selected {
+  border: 2px solid #06bfd3;
+  color: #06bfd3;
+}
+
+.br-theme-bars-movie .br-widget a.br-active, .br-theme-bars-movie .br-widget a.br-selected {
+  background-color: #06bfd3;
+}
+
+.br-theme-bars-1to10 .br-widget a.br-active, .br-theme-bars-1to10 .br-widget a.br-selected {
+  background-color: #06bfd3;
+}
+
+.br-theme-bars-1to10 .br-widget .br-current-rating {
+  color: #06bfd3;
+}
+
+.br-theme-bars-movie .br-widget .br-current-rating {
+  color: #06bfd3;
+}
+
+.header-bg {
+  background: #06bfd3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#43d799), to(#06bfd3));
+  background: linear-gradient(to left, #43d799 0%, #06bfd3 100%);
+}
+
+.footer a:not(.btn) {
+  color: #06bfd3;
+}
+
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .search-show .search-element {
+    background: #06bfd3;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .search-show .search-element {
+    background: #06bfd3;
+  }
+}
+
+.wizard-card .moving-tab {
+  background-color: #06bfd3 !important;
+}
+
+.form-group label.control-label {
+  color: #06bfd3;
+}
+
+.wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
+  border-color: #06bfd3 !important;
+  color: #06bfd3 !important;
+}
+
+.addui-slider .addui-slider-track .addui-slider-range {
+  background: #06bfd3;
+}
+
+.addui-slider .addui-slider-track .addui-slider-handle:after {
+  background: #06bfd3;
+}
+
+.cal1 .clndr .clndr-table .header-days {
+  background: #06bfd3;
+}
+
+.cal1 .clndr .clndr-table tr .day.today, .cal1 .clndr .clndr-table tr .day.my-today {
+  color: #06bfd3 !important;
+}
+
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  color: #06bfd3;
+}
+
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  color: #06bfd3;
+}
+
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+  background: #06bfd3;
+}
+
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+  background: #06bfd3;
+}
+
+.fc-event, .fc-event-dot {
+  background-color: #06bfd3;
+}
+
+.fc-toolbar .fc-state-active, .fc-toolbar .ui-state-active {
+  background: #06bfd3;
+}
+
+div.conv-form-wrapper div.options div.option {
+  border: 1px solid #06bfd3;
+  background: #fff;
+  color: #06bfd3;
+}
+
+form.convFormDynamic button.submit {
+  color: #06bfd3;
+  border: 1px solid #06bfd3;
+  background: #fff;
+}
+
+div.conv-form-wrapper div.options div.option.selected {
+  background: #06bfd3;
+  color: #fff;
+}
+
+div.conv-form-wrapper div.options div.option.selected:hover {
+  background: #06bfd3;
+}
+
+form.convFormDynamic button.submit:hover {
+  background: #06bfd3;
+  color: #fff;
+}
+
+div.conv-form-wrapper div#messages div.message.from {
+  background: #06bfd3;
+  color: #fff;
+}
+
+#sidebar ul li.active > a {
+  color: #06bfd3;
+}
+
+.accordionjs .acc_section.acc_active > .acc_head {
+  background: #06bfd3 !important;
+}
+
+.tab_wrapper > ul li.active {
+  border-color: #06bfd3 !important;
+  background: #06bfd3 !important;
+  color: #fff;
+}
+
+.tab_wrapper.right_side > ul li.active:after {
+  background: #06bfd3 !important;
+}
+
+#sidebar li a[aria-expanded="true"], #sidebar li a.active {
+  background: #06bfd3;
+  color: #fff;
+}
+
+.sweet-alert button {
+  background-color: #06bfd3 !important;
+}
+
+.timeline__item:after {
+  border: 6px solid #06bfd3;
+}
+
+.job-box-filter a.filtsec i {
+  color: #06bfd3;
+}
+
+.search-inline button[type="submit"] {
+  background: #06bfd3;
+}
+
+.sw-theme-dots .nav-tabs .nav-link:hover:not(.disabled) {
+  color: #06bfd3;
+}
+
+.card-bgimg:before {
+  background: #06bfd3;
+}
+
+.card-custom-icon.text-primary {
+  fill: #06bfd3;
+}
+
+.feature .feature-icon {
+  color: #06bfd3;
+}
+
+.under-countdown .countdown {
+  background: #06bfd3;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+  background: #06bfd3;
+}
+
+.social-profile-buttons li a i {
+  color: #06bfd3;
+}
+
+.footer .social .social-icon {
+  color: #06bfd3;
+}
+
+.page-leftheader .breadcrumb-item.active a {
+  color: #06bfd3;
+}
+
+.page-leftheader .breadcrumb-item.active {
+  color: #06bfd3;
+}
+
+.dot1 {
+  background: -webkit-gradient(linear, left top, right top, from(#06bfd3), to(#06bfd3));
+}
+
+.dot2 {
+  background: -webkit-gradient(linear, left top, right top, from(#06bfd3), to(#06bfd3));
+}
+
+.spinner4 > div {
+  background: -webkit-gradient(linear, left top, right top, from(#06bfd3), to(#06bfd3));
+}
+
+.sk-circle .sk-child:before {
+  background: -webkit-gradient(linear, left top, right top, from(#06bfd3), to(#06bfd3));
+}
+
+.sk-cube-grid .sk-cube {
+  background: #06bfd3;
+}
+
+.sk-folding-cube .sk-cube:before {
+  background-color: #06bfd3;
+}
+
+.spinner5 > div {
+  background: -webkit-gradient(linear, left top, right top, from(#06bfd3), to(#06bfd3));
+}
+
+.spinner {
+  background: #06bfd3;
+}
+
+.spinner-lg {
+  background-color: #06bfd3;
+}
+
+.double-bounce1, .double-bounce2 {
+  background: #06bfd3;
+}
+
+.cube1, .cube2 {
+  background-color: #06bfd3;
+}
+
+.lds-heart div {
+  background: #06bfd3;
+}
+
+.lds-heart div:after, .lds-heart div:before {
+  background: #06bfd3;
+}
+
+.lds-ring div {
+  border: 6px solid #06bfd3;
+  border-color: #06bfd3 transparent transparent transparent;
+}
+
+.lds-hourglass:after {
+  border: 26px solid #06bfd3;
+  border-color: #06bfd3 transparent;
+}
+
+.table-primary, .table-primary > th, .table-primary > td {
+  background-color: #e3f9fc;
+}
+
+.table-hover .table-primary:hover {
+  background-color: #f0f0f2;
+}
+
+.table-hover .table-primary:hover > td, .table-hover .table-primary:hover > th {
+  background-color: #e3f9fc;
+}
+
+.table-secondary, .table-secondary > th, .table-secondary > td {
+  background-color: #f72d66;
+}
+
+.table-hover .table-secondary:hover {
+  background-color: #cfd2d6;
+}
+
+.table-hover .table-secondary:hover > td, .table-hover .table-secondary:hover > th {
+  background-color: #f72d66;
+}
+
+.mediaicon {
+  border: 1px solid #06bfd3;
+  background: #06bfd3;
+}
+
+a.chip:hover {
+  background-color: #06bfd3;
+}
+
+#back-to-top {
+  background: #06bfd3;
+}
+
+#back-to-top:hover {
+  color: #06bfd3;
+  border: 2px solid #06bfd3;
+}
+
+.tabs-menu ul li .active {
+  background: #06bfd3;
+}
+
+.tabs-menu1 ul li .active {
+  border-bottom: 3px solid #06bfd3;
+  color: #06bfd3;
+}
+
+.sub-panel-heading .tabs-menu ul li a.active {
+  color: #06bfd3 !important;
+}
+
+.receipts-inline-table .tabs-menu1 ul li .active {
+  color: #06bfd3;
+}
+
+.timeline__item:after {
+  border: 6px solid #06bfd3;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #06bfd3;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  background-color: #06bfd3;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #06bfd3;
+  border-color: #06bfd3;
+}
+
+.custom-select:focus {
+  border-color: #06bfd3;
+}
+
+.custom-file-label::after {
+  background-color: #06bfd3;
+  border-left: 1px solid #06bfd3;
+}
+
+.custom-range::-ms-thumb {
+  background-color: #06bfd3;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background-color: #06bfd3;
+}
+
+.custom-range::-moz-range-thumb {
+  background-color: #06bfd3;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  color: #06bfd3;
+}
+
+.ui-datepicker .ui-datepicker-calendar td a:hover {
+  background-color: #06bfd3;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a {
+  background-color: #06bfd3;
+}
+
+.form-control:focus {
+  border-color: #06bfd3;
+}
+
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+  color: #06bfd3;
+}
+
+.wizard > .steps .current a .number, .wizard > .steps .current a:hover .number, .wizard > .steps .current a:active .number {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+  background-color: #06bfd3;
+}
+
+.wizard-style-1 > .steps > ul .current a .number, .wizard-style-1 > .steps > ul .current a:hover .number, .wizard-style-1 > .steps > ul .current a:active .number {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.wizard-style-2 > .steps > ul .current a .number, .wizard-style-2 > .steps > ul .current a:hover .number, .wizard-style-2 > .steps > ul .current a:active .number {
+  border-color: #06bfd3;
+  color: #06bfd3;
+}
+
+.selectgroup-input:checked + .selectgroup-button {
+  border-color: #06bfd3;
+  color: #06bfd3;
+}
+
+.selectgroup-input:focus + .selectgroup-button {
+  border-color: #06bfd3;
+  color: #06bfd3;
+}
+
+.custom-switch-input:checked ~ .custom-switch-indicator {
+  background: #06bfd3;
+}
+
+.custom-switch-input:focus ~ .custom-switch-indicator {
+  border-color: #06bfd3;
+}
+
+.label-primary {
+  background: #06bfd3;
+}
+
+.bg-primary {
+  background-color: #06bfd3 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
+  background-color: #09cce1 !important;
+}
+
+.bg-secondary {
+  background-color: #fa057a !important;
+}
+
+a.bg-secondary:hover, a.bg-secondary:focus, button.bg-secondary:hover, button.bg-secondary:focus {
+  background-color: #fa057a !important;
+}
+
+.bg-gradient-primary {
+  background: -webkit-gradient(linear, right top, left top, from(#43d799), to(#06bfd3));
+  background: linear-gradient(to left, #43d799 0%, #06bfd3 100%);
+}
+
+.border-primary {
+  border-color: #06bfd3 !important;
+}
+
+.border-secondary {
+  border-color: #f72d66 !important;
+}
+
+i.fa.round {
+  border: 1px solid #06bfd3;
+}
+
+.list-icon span p {
+  border: 1px solid #06bfd3;
+}
+
+.text-primary {
+  color: #06bfd3 !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #09cce1 !important;
+}
+
+.text-secondary {
+  color: #f72d66 !important;
+}
+
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #f72d66 !important;
+}
+
+pre {
+  border-left: 3px solid #06bfd3;
+}
+
+.bg-primary-transparent {
+  background-color: rgba(6, 191, 211, 0.2);
+}
+
+.bg-secondary-transparent {
+  background-color: rgba(247, 45, 102, 0.2);
+}
+
+.bg-primary-transparent-2 {
+  background-color: rgba(250, 5, 122, 0.15);
+}
+
+.bg-secondary-transparent-2 {
+  background-color: rgba(247, 45, 102, 0.15);
+}
+
+.card-header:before {
+  background-color: #06bfd3;
+}
+
+.panel.price > .panel-heading {
+  background: #06bfd3;
+  color: #fff;
+}
+
+.pricing-tabs ul.nav-price li a.active {
+  background: #06bfd3;
+}
+
+.pricing-tabs .pri-tabs-heading2 ul.nav-price li a.active {
+  background: #06bfd3;
+}
+
+.icon-dropshadow-secondary {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(247, 45, 102, 0.3));
+          filter: drop-shadow(0px 4px 4px rgba(247, 45, 102, 0.3));
+}
+
+.card-custom-icon.text-secondary {
+  fill: #f72d66;
+}
+
+.fill-secondary {
+  fill: #f72d66;
+}
+
+.tree li i {
+  color: #06bfd3;
+}
+
+.timeline .timeline-items .timeline-item::after {
+  background: #06bfd3;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+  background: #06bfd3;
+  color: #fff;
+}
+
+.SumoSelect:focus > .CaptionCont {
+  border-color: #06bfd3;
+}
+
+.SumoSelect > .optWrapper.multiple.okCancelInMulti > .MultiControls > p:focus {
+  border-color: #06bfd3;
+  outline: none;
+  background-color: #06bfd3;
+}
+
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i, .SumoSelect .select-all.selected > span i, .SumoSelect .select-all.partial > span i {
+  background-color: #06bfd3;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #06bfd3;
+  color: white;
+}
+
+.ql-editor .ql-bg-blue {
+  background-color: #06bfd3;
+}
+
+.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #06bfd3;
+  outline: 0;
+  background: #fff;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-fill, .ql-snow .ql-toolbar button:hover .ql-fill, .ql-snow.ql-toolbar button:focus .ql-fill, .ql-snow .ql-toolbar button:focus .ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill, .ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06bfd3;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-stroke, .ql-snow .ql-toolbar button:hover .ql-stroke, .ql-snow.ql-toolbar button:focus .ql-stroke, .ql-snow .ql-toolbar button:focus .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar button:hover .ql-stroke-miter, .ql-snow .ql-toolbar button:hover .ql-stroke-miter, .ql-snow.ql-toolbar button:focus .ql-stroke-miter, .ql-snow .ql-toolbar button:focus .ql-stroke-miter, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #06bfd3;
+}
+
+.ql-snow a {
+  color: #06bfd3;
+}
+
+.ms-choice {
+  color: #06bfd3;
+}
+
+.checkbox-group .checkbox-normal:checked + label:before {
+  background: #06bfd3;
+}
+
+.irs-from, .irs-to, .irs-single {
+  background-color: #06bfd3;
+}
+
+.irs-bar {
+  background-image: none;
+  background-color: #06bfd3;
+}
+
+.irs-bar-edge {
+  background-image: none;
+  background-color: #06bfd3;
+}
+
+.irs-from::after, .irs-to::after, .irs-single::after {
+  border-top-color: #06bfd3;
+}
+
+.irs-slider:before {
+  background-color: #06bfd3;
+}
+
+.irs-slider:hover:before, .irs-slider:focus:before {
+  background-color: #06bfd3;
+}
+
+.irs-primary .irs-bar, .irs-primary .irs-bar-edge, .irs-primary .irs-slider::before {
+  background-color: #06bfd3;
+}
+
+.irs-primary .irs-from, .irs-primary .irs-to, .irs-primary .irs-single {
+  background-color: #06bfd3;
+}
+
+.irs-primary .irs-from::after, .irs-primary .irs-to::after, .irs-primary .irs-single::after {
+  border-top-color: #06bfd3;
+}
+
+.irs-modern .irs-slider {
+  border: 1px solid #06bfd3;
+}
+
+.irs-modern .irs-slider::before {
+  border-left: 1px solid #06bfd3;
+  border-right: 1px solid #06bfd3;
+}
+
+.irs-modern.irs-primary .irs-slider {
+  border-color: #06bfd3;
+}
+
+.irs-modern.irs-primary .irs-slider::before {
+  border-color: #06bfd3;
+}
+
+.irs-outline .irs-line {
+  border: 1px solid #06bfd3;
+}
+
+.irs-outline .irs-slider {
+  border: 1px solid #06bfd3;
+}
+
+.irs-outline .irs-slider:hover::before, .irs-outline .irs-slider:focus::before {
+  background-color: #06bfd3;
+}
+
+.irs-outline.irs-primary .irs-line, .irs-outline.irs-primary .irs-slider {
+  border-color: #06bfd3;
+}
+
+.irs-outline.irs-primary .irs-line:hover::before, .irs-outline.irs-primary .irs-line:focus::before, .irs-outline.irs-primary .irs-slider:hover::before, .irs-outline.irs-primary .irs-slider:focus::before {
+  background-color: #06bfd3;
+}
+
+.cropme-slider input::-webkit-slider-thumb, .cropme-rotation-slider input::-webkit-slider-thumb {
+  background: #06bfd3;
+}
+
+.fc button {
+  color: #06bfd3;
+}
+
+.sw-theme-dots > ul.step-anchor > li > a:before {
+  color: #06bfd3;
+}
+
+.sw-theme-dots > ul.step-anchor > li.active > a {
+  color: #06bfd3;
+}
+
+.sw-theme-dots > ul.step-anchor > li.active > a:after {
+  background: #06bfd3;
+}
+
+.theme-white .cookie-popup-accept-cookies {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.theme-light .cookie-popup-accept-cookies {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.theme-primary .cookie-popup {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #06bfd3;
+  border-color: transparent;
+  color: #fff;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: #06bfd3;
+  color: #fff;
+}
+
+/*-- Horizontal-menu --*/
+.hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > a:hover {
+  color: #06bfd3;
+}
+
+.hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a:hover {
+  color: #06bfd3;
+}
+
+.hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a:hover {
+  color: #06bfd3;
+}
+
+.hor-menu .horizontalMenu > .horizontalMenu-list > li > .horizontal-megamenu .link-list li a.active {
+  color: #06bfd3;
+}
+
+.horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a.active {
+  color: #06bfd3;
+}
+
+.hor-menu .horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > a.active {
+  color: #06bfd3;
+}
+
+.sub-menu li.active:before, .sub-menu li:hover:before, .mega-menubg li a.active:before, .mega-menubg li a:hover:before {
+  color: #06bfd3;
+  opacity: .9;
+}
+
+/*-- Sidemenu --*/
+.app-sidebar__toggle:hover {
+  color: #06bfd3;
+}
+
+.slide-menu a.active {
+  color: #06bfd3 !important;
+}
+
+.slide-item.active, .slide-item:hover, .slide-item:focus {
+  color: #06bfd3;
+}
+
+.slide.is-expanded .slide-menu li a:hover {
+  color: #06bfd3;
+}
+
+@media (min-width: 768px) {
+  .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-menu a.active {
+    color: #06bfd3;
+    background: #fff;
+  }
+  .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-item.active, .slide-item:hover, .slide-item:focus {
+    color: #06bfd3;
+  }
+  .sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .slide-item.active {
+    color: #06bfd3;
+    background: #fff;
+  }
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #06bfd3;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #06bfd3;
+}
+
+.onoffswitch2-checkbox:checked + .onoffswitch2-label {
+  background-color: #06bfd3;
+}
+
+.onoffswitch2-checkbox:checked + .onoffswitch-label2, .onoffswitch2-checkbox:checked + .onoffswitch2-label:before {
+  border-color: #06bfd3;
+}
+
+.header-brand-img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.color-hor-header .header, .color-menu .app-sidebar, .color-menu .app-sidebar__logo {
+  background: #06bfd3 !important;
+}
+
+.gradient-menu .app-sidebar__logo {
+  background: #0dc2cd !important;
+}
+
+.gradient-hor-header .header {
+  background: -webkit-gradient(linear, right top, left top, from(#43d799), to(#06bfd3));
+  background: linear-gradient(to left, #43d799 0%, #06bfd3 100%);
+}
+
+.color-hor-menu .horizontal-main.hor-menu, .gradient-hor-menu .horizontalMenu > .horizontalMenu-list {
+  background: #06bfd3 !important;
+}
+
+.gradient-hor-menu .horizontal-main.hor-menu {
+  background: -webkit-gradient(linear, right top, left top, from(#43d799), to(#06bfd3)) !important;
+  background: linear-gradient(to left, #43d799 0%, #06bfd3 100%) !important;
+}
+
+.gradient-hor-menu .horizontalMenu > .horizontalMenu-list, .gradient-menu .app-sidebar {
+  background: -webkit-gradient(linear, left bottom, left top, from(#43d799), to(#06bfd3)) !important;
+  background: linear-gradient(to top, #43d799 0%, #06bfd3 100%) !important;
+}
+
+.color-menu .side-menu .side-menu__icon, .color-menu .sidebar-navs a, .color-menu.sidebar-mini.sidenav-toggled.sidenav-toggled1 .app-sidebar .side-menu__icon {
+  background: #06bfd3;
+}
+
+.color-hor-header .nav-link.icon .header-icon, .color-hor-header .app-sidebar__toggle .header-icon, .color-hor-menu .hor-icon {
+  background: #06bfd3;
+}
+/*# sourceMappingURL=color5.css.map */

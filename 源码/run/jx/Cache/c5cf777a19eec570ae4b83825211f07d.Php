@@ -1,0 +1,1 @@
+{"referrer":"origin","url":"https:\/\/m3u8.tv.janan.net\/data\/youku\/606dbf38c5ae8e57dba271288b84b44f.m3u8","player":"dplayer"}

@@ -1,0 +1,95 @@
+<view id="system-role">
+    <title>角色管理</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>系统管理</a>
+            <a><cite>角色管理</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">所有角色</li>
+                </ul>
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm create">
+                                新增角色
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+
+                        <table id="system-role-table" lay-filter="system-role-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/role/saveRole';
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "角色名称", name: "name", type: "input", placeholder: "请输入角色名称"},
+                {title: "权限选择", name: "auth", type: "treeCheckbox", dict: "system_router,id,name,pid", cache: false},
+                {title: "状态", name: "status", type: "switch", text: "启用"}
+            ], res => {
+                tableInstance.instance.reload();
+            }, values, ['100%', '100%']);
+        }
+
+        tableInstance = hex.renderTable('system-role-table', '/system/role/getRoles', '#system-role-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }
+            , {
+                field: 'name', title: '角色名称', edit: "text"
+            }
+            , {
+                field: 'status', title: '状态', dictType: "switch", dictText: "启用"
+            },
+            {
+                action: [
+                    {type: "button", icon: "layui-icon-survey", title: "修改", class: "layui-btn-normal edit"}
+                ]
+            }
+        ]], res => {
+            res.data.forEach((r, index) => {
+                res.data[index].auth = [];
+                res.data[index].routers.forEach(item => {
+                    res.data[index].auth.push(item.id);
+                });
+            });
+            hex.setIdMap(res.data);
+            $('#system-role .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+        }, saveUrl, [
+            {type: "checkbox", filter: "system-role-status", name: "status"}
+        ]);
+
+
+        $('#system-role .create').click(() => {
+            modal();
+        });
+
+        $('#system-role .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-role-table').data);
+            hex.deleteBatchEntity('/system/role/delRole', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+    });
+</script>

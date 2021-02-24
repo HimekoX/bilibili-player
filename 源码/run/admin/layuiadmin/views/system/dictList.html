@@ -1,0 +1,84 @@
+<view id="system-dictList">
+    <title>数据列表</title>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">全部列表</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm create">
+                                新增数据
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+
+                        <table id="system-dictList-table" lay-filter="system-dictList-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/dict/list/saveDictValue',
+            id = hex.get('systemDictId');
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "id", name: "dict_id", type: "hidden", default: id},
+                {title: "数据名称", name: "name", type: "input", placeholder: "请输入数据名称"},
+                {title: "数据值", name: "val", type: "input", placeholder: "请输入数据值"},
+                {title: "状态", name: "status", type: "switch", text: "启用"},
+                {title: "排序", name: "rank", type: "input", default: 0}
+            ], res => {
+                tableInstance.instance.reload();
+            }, values);
+        };
+
+        tableInstance = hex.renderTable('system-dictList-table', '/system/dict/list/getDictLists?id=' + id, '#system-dictList-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }
+            , {
+                field: 'name', title: '数据名称', edit: "text"
+            }
+            , {
+                field: 'val', title: '数据值', edit: "text", width: 85
+            }
+            , {
+                field: 'status', title: '状态', dictType: "switch", width: 110, dictText: "启用"
+            }
+            , {
+                field: 'rank', title: '排序', edit: "text", width: 65
+            }
+            , {
+                field: 'create_date', title: '创建时间'
+            }
+        ]], res => {
+            $('#system-dictList .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+        }, saveUrl);
+
+
+        $('#system-dictList .create').click(() => {
+            modal();
+        });
+
+        $('#system-dictList .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-dictList-table').data);
+            hex.deleteBatchEntity('/system/dict/list/delDictValue', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+    });
+</script>

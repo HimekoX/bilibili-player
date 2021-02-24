@@ -1,0 +1,144 @@
+<view id="barrage-list">
+    <title>管理列表</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>弹幕系统</a>
+            <a><cite>弹幕列表</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">弹幕列表</li>
+                </ul>
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <form class="query"></form>
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+                        <table id="system-barrage-table" lay-filter="system-barrage-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/barrage/saveBarrage';
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "弹幕颜色", name: "color", type: "input", placeholder: "颜色请在百度搜哦~"},
+                {title: "弹幕内容", name: "text", type: "textarea", height: 100, placeholder: "请输入弹幕内容"}
+            ], res => {
+                tableInstance.instance.reload();
+            }, values, ['540px', '300px']);
+        }
+        var appList = [];
+
+        $.ajax({
+            url: "/system/dict/getDict"//地址
+            , type: 'POST'//类型
+            , dataType: 'json'//数据类型
+            , data: {'dict':'player,id,title','keywords':''},
+            //请求成功
+            success: function (res) {
+                if(res.data.length > 0){
+                    res.data.forEach((item) => {
+                        appList[item.id] = item.name;
+                    });
+                }
+                tableInstance.instance.reload();
+            }
+        })
+
+        tableInstance = hex.renderTable('system-barrage-table', '/system/barrage/getBarrageList', '#system-barrage-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }, {
+                field: 'id', title: 'ID'
+            },{
+                field: 'cid', title: '弹幕ID'
+            }, {
+                title: "应用", templet: function (item) {
+                    if(item.pid == 0){
+                        return '未绑定';
+                    }else{
+                        return appList[item.pid];
+                    }
+
+                }
+            },
+            {
+                field: 'text', title: '弹幕内容'
+            }, {
+                field: 'type', title: '类型'
+            }, {
+                field: 'color', title: '颜色'
+            }, {
+                field: 'videotime', title: '时间点'
+            }, {
+                field: 'ip', title: '发送IP'
+            }, {
+                title: '时间', templet: function (item) {
+                    value = item.time;
+                    var date = new Date(parseInt(value) * 1000)
+                    var tt = [date.getFullYear(), date.getMonth() + 1, date.getDate()].join('-') + '  ' + [date.getHours(), date.getMinutes()].join(':');
+                    return tt;
+                }
+            }, {
+                field: 'size', title: '弹幕大小'
+            }, {
+                field: 'referer', title: '来源地址'
+            },
+            { width: 120,action: [
+                    {type: "button",  title: "访问", class: "layui-btn-warm access"},
+                    {type: "button",  title: "修改", class: "layui-btn-normal edit"}
+                ]
+            }
+        ]], res => {
+            hex.setIdMap(res.data);
+
+            $('#barrage-list .access').click(function () {
+                let data =hex.getMapItem(this);
+                window.open(data['referer'],"_blank");
+            });
+
+            $('#barrage-list .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+        }, saveUrl);
+
+        $('#barrage-list .create').click(() => {
+            modal();
+        });
+
+        $('#barrage-list .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-barrage-table').data);
+
+            hex.deleteBatchEntity('/system/barrage/delBarrage', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+
+        hex.query('#barrage-list .query', tableInstance.instance, [
+            {title: "内容查询", name: "search-text", type: "input", width: 151},
+            {title: "类型查询", name: "equal-type", type: "input", width: 151},
+            {title: "弹幕ID", name: "equal-id", type: "input", width: 151},
+            {title: "发送IP", name: "equal-ip", type: "input", width: 151},
+            {title: "应用查询", name: "equal-pid", type: "boxes", dict: "player,id,title", width: 150},
+        ]);
+
+    });
+</script>

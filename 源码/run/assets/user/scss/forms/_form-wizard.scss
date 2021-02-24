@@ -1,0 +1,476 @@
+/*--- WIZARD ELEMENTS ---*/
+
+.wizard {
+	border: 1px solid #e9edf4;
+	background-color: $white;
+  
+	> {
+	  .steps {
+		padding: 20px;
+  
+		> ul {
+		  padding: 0;
+		  margin-bottom: 0;
+		  display: flex;
+  
+		  li {
+			float: none;
+			display: block;
+			width: auto;
+  
+			.current-info {
+			  display: none;
+			}
+  
+			.title {
+			  margin-left: 5px;
+			  white-space: nowrap;
+			  transition: all 0.2s ease-in-out;
+			  margin: 0;
+			  min-height: auto;
+			}
+  
+			+ li {
+			  margin-left: 5px;
+			}
+		  }
+		}
+  
+		a {
+		  color: #14112d;
+		  font-weight: 500;
+		  font-size: 15px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+  
+		  &:hover, &:active {
+			color: #14112d;
+			font-weight: 500;
+			font-size: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		  }
+  
+		  .number, &:hover .number, &:active .number {
+			flex-shrink: 0;
+			font-weight: 600;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			color: $color;
+			display: block;
+			text-align: center;
+			line-height: 2.1;
+			width: 40px;
+			height: 40px;
+			background-color: #f0f0f2;
+			border-radius: 100%;
+			transition: all 0.2s ease-in-out;
+			margin-right: 5px;
+		  }
+		}
+  
+		.disabled a {
+		  color: #737688;
+  
+		  &:hover, &:active {
+			color: #737688;
+		  }
+		}
+  
+		.current a {
+		  .title, &:hover .title, &:active .title {
+			display: inline-block;
+		  }
+		}
+  
+		.done a {
+		  color: rgba(112, 94, 200, 0.7);
+  
+		  &:hover, &:active {
+			color: rgba(112, 94, 200, 0.7);
+		  }
+  
+		  .number, &:hover .number, &:active .number {
+			background: rgba(112, 94, 200, 0.7);
+			color: $white;
+		  }
+		}
+	  }
+  
+	  .content {
+		border-top: 1px solid #e9edf4;
+		border-bottom: 1px solid #e9edf4;
+		min-height: 150px;
+		padding: 20px;
+  
+		> {
+		  .title {
+			font-size: 18px;
+			color: $color;
+			font-weight: 700;
+			margin-bottom: 5px;
+			display: none;
+			margin: 0;
+  
+			&.current {
+			  display: block;
+			}
+		  }
+  
+		  .body {
+			float: none;
+			position: static;
+			width: auto;
+			height: auto;
+  
+			input.parsley-error {
+			  border-color: #ff5c77;
+  
+			  + ul {
+				list-style: none !important;
+			  }
+			}
+		  }
+		}
+	  }
+  
+	  .actions {
+		padding: 20px;
+  
+		> ul {
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		  display: flex;
+		  justify-content: space-between;
+  
+		  > li:last-child a {
+			background-color: #2dce89;
+		  }
+		}
+  
+		a {
+		  display: block;
+		  padding: 9px 25px;
+		  line-height: 1.573;
+		  color: $white;
+		  border-radius: 4px;
+		  font-weight: 500;
+  
+		  &:hover, &:active {
+			display: block;
+			padding: 9px 25px;
+			line-height: 1.573;
+			color: $white;
+			border-radius: 4px;
+			font-weight: 500;
+		  }
+		}
+  
+		.disabled a {
+		  background-color: #ef5858;
+		  color: $white;
+  
+		  &:hover, &:active {
+			background-color: #ef5858;
+			color: $white;
+		  }
+		}
+	  }
+	}
+  
+	&.vertical > {
+	  .steps {
+		padding: 20px;
+  
+		ul li .title {
+		  display: none;
+		}
+  
+		.current a .title {
+		  display: inline-block;
+		}
+	  }
+  
+	  .content {
+		margin: 0;
+		padding: 20px;
+	  }
+  
+	  .actions {
+		padding: 20px;
+  
+		ul {
+		  float: none;
+		  margin: 0;
+		  padding: 0;
+		}
+	  }
+	}
+  }
+  
+  @media (min-width: 768px) {
+	.wizard {
+	  > .steps {
+		> ul li .title {
+		  display: inline-block;
+		}
+  
+		padding: 25px;
+	  }
+  
+	  &.vertical > {
+		.actions, .content {
+		  width: 85%;
+		}
+  
+		.steps {
+		  ul li + li {
+			margin-top: 20px;
+		  }
+  
+		  width: 15%;
+		}
+	  }
+  
+	  > {
+		.actions, .content {
+		  padding: 25px;
+		}
+  
+		.steps .done a {
+		  .title, &:hover .title, &:active .title {
+			display: inline-block;
+		  }
+		}
+	  }
+	}
+  }
+  
+  @media (min-width: 576px) {
+	.wizard {
+	  > .steps > ul li {
+		+ li {
+		  margin-left: 20px;
+		}
+  
+		.title {
+		  display: none;
+		  margin-left: 10px;
+		}
+	  }
+  
+	  &.vertical > {
+		.actions {
+		  width: 80%;
+		  float: right;
+		  border-left: 1px solid #e9edf4;
+		}
+  
+		.content {
+		  border-top-width: 0;
+		  border-bottom-width: 0;
+		  width: 80%;
+		  float: right;
+		  border-left: 1px solid #e9edf4;
+		}
+  
+		.steps {
+		  .current a .title {
+			display: none;
+		  }
+  
+		  ul {
+			li + li {
+			  margin-top: 10px;
+			  margin-left: 0;
+			}
+  
+			flex-direction: column;
+		  }
+  
+		  float: left;
+		  width: 20%;
+		}
+	  }
+  
+	  > .steps a {
+		.number, &:hover .number, &:active .number {
+		  font-size: 18px;
+		  font-weight: 600;
+		  line-height: 2.1;
+		  width: 40px;
+		  height: 40px;
+		}
+	  }
+	}
+  }
+  
+  @media (min-width: 1200px) {
+	.wizard > .steps a {
+	  justify-content: flex-start;
+  
+	  &:hover, &:active {
+		justify-content: flex-start;
+	  }
+	}
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+	.wizard > .steps {
+	  a {
+		.number, &:hover .number, &:active .number {
+		  transition: none;
+		}
+	  }
+  
+	  > ul li .title {
+		transition: none;
+	  }
+	}
+  }
+  
+  @media (max-width: 991px) {
+	.wizard > .steps .disabled {
+	  display: none;
+	}
+  }
+  
+  @media (min-width: 992px) {
+	.wizard {
+	  &.vertical > {
+		.actions, .content {
+		  width: 70%;
+		  padding: 25px;
+		}
+  
+		.steps {
+		  .current a .title {
+			display: inline-block;
+		  }
+  
+		  a {
+			justify-content: flex-start;
+		  }
+  
+		  ul li .title {
+			display: block;
+		  }
+  
+		  padding: 20px;
+		  width: 30%;
+		}
+	  }
+  
+	  > {
+		.actions, .content {
+		  padding: 20px;
+		}
+  
+		.steps {
+		  .disabled {
+			display: block;
+		  }
+  
+		  > ul li + li {
+			margin-left: 30px;
+		  }
+  
+		  padding: 20px;
+		}
+	  }
+	}
+  }
+  
+  /****** EQUAL COLUMN WIDTH STEP INDICATOR *****/
+  
+  .step-equal-width > .steps > ul {
+	display: flex;
+  
+	> li {
+	  flex: 1;
+	  width: auto;
+	  float: none;
+	}
+  }
+  
+  /****** EQUAL COLUMN WIDTH STEP INDICATOR *****/
+  
+  .wizard-style-1 > .steps > ul {
+	a {
+	  padding: 0;
+	  height: 50px;
+  
+	  &:hover, &:active {
+		padding: 0;
+		height: 50px;
+	  }
+  
+	  .number, &:hover .number, &:active .number {
+		width: 50px;
+		height: 100%;
+		border: 0;
+		font-size: 18px;
+		font-weight: bold;
+		color: #737688;
+		background-color: #f3f7fd;
+		border-radius: 0;
+	  }
+  
+	  .title, &:hover .title, &:active .title {
+		margin-right: 20px;
+		margin-left: 20px;
+	  }
+	}
+  
+	.done a {
+	  .number, &:hover .number, &:active .number {
+		background-color: #643ab0;
+		color: $white;
+	  }
+	}
+  }
+  
+  .wizard-style-2 > .steps > ul {
+	a {
+	  padding: 0;
+	  height: 50px;
+	  border-radius: 50px;
+  
+	  &:hover, &:active {
+		padding: 0;
+		height: 50px;
+		border-radius: 50px;
+	  }
+  
+	  .number, &:hover .number, &:active .number {
+		width: 50px;
+		height: 100%;
+		border: 2px solid #f3f7fd;
+		font-size: 18px;
+		font-weight: bold;
+		color: #737688;
+		background-color: $white;
+	  }
+  
+	  .title, &:hover .title, &:active .title {
+		margin-right: 20px;
+	  }
+	}
+  
+	.done a {
+	  .number, &:hover .number, &:active .number {
+		border-color: #8c3feb;
+		color: #8c3feb;
+	  }
+	}
+  }
+  
+  /*--- WIZARD ELEMENTS ---*/
+  
+  .parsley-required {
+	font-size: 12px;
+	color: #ff5c77;
+	margin-top: 3px;
+  }

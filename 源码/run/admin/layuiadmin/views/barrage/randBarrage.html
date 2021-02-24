@@ -1,0 +1,85 @@
+<view id="rarsing-list">
+    <title>管理列表</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>弹幕系统</a>
+            <a><cite>弹幕AV库</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">弹幕AV库</li>
+                </ul>
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <form class="query"></form>
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm create">
+                                添加AV号
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+                        <table id="system-rarsing-table" lay-filter="system-rarsing-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/barrage/parsing/saveParsing';
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "AV号", name: "av", type: "input", placeholder: "请填写平台的弹幕AV号"},
+                {title: "备注信息", name: "remarks", type: "input", placeholder: "请输入备注信息"},
+            ], res => {
+                tableInstance.instance.reload();
+            }, values, ['540px', '240px']);
+        }
+
+        tableInstance = hex.renderTable('system-rarsing-table', '/system/barrage/parsing/getParsingList', '#system-rarsing-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }, {
+                field: 'av', title: 'Av号', edit: 'edit'
+            }, {
+                field: 'remarks', title: '备注', edit: 'edit'
+            }, {
+                width: 120, action: [
+                    {type: "button", title: "修改", class: "layui-btn-normal edit"}
+                ]
+            }
+        ]], res => {
+            hex.setIdMap(res.data);
+
+            $('#rarsing-list .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+        }, saveUrl);
+
+        $('#rarsing-list .create').click(() => {
+            modal();
+        });
+
+        $('#rarsing-list .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-rarsing-table').data);
+
+            hex.deleteBatchEntity('/system/barrage/parsing/delParsing', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+
+    });
+</script>

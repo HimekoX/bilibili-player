@@ -1,0 +1,71 @@
+
+<script type="text/html" template>
+  <link rel="stylesheet" href="{{ layui.setter.base }}style/login.css?v={{ layui.admin.v }}-1" media="all">
+</script>
+
+
+<div class="layadmin-user-login layadmin-user-display-show" id="LAY-user-login" style="display: none;">
+
+  <div class="layadmin-user-login-main">
+    <div class="layadmin-user-login-box layadmin-user-login-header">
+      <h2>SmallPro</h2>
+      <p>SmallPro是一个PHP的简约强大的Admin后台框架</p>
+    </div>
+    <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+      <div class="layui-form-item">
+        <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="LAY-user-login-username"></label>
+        <input type="text" name="user" id="LAY-user-login-username" lay-verify="required" placeholder="用户名" class="layui-input">
+      </div>
+      <div class="layui-form-item">
+        <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="LAY-user-login-password"></label>
+        <input type="password" name="pass" id="LAY-user-login-password" lay-verify="required" placeholder="密码" class="layui-input">
+      </div>
+      <div class="layui-form-item">
+        <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="LAY-user-login-submit">登 入</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+layui.use(['admin', 'form', 'user'], function(){
+  var $ = layui.$
+  ,setter = layui.setter
+  ,admin = layui.admin
+  ,form = layui.form
+  ,router = layui.router()
+  ,search = router.search;
+
+  form.render();
+
+  //提交
+  form.on('submit(LAY-user-login-submit)', function(obj){
+  
+    //请求登入接口
+    admin.req({
+      url: '/system/auth/login' //实际使用请改成服务端真实接口
+      ,data: obj.field
+      ,done: function(res){
+      
+        //请求成功后，写入 access_token
+        layui.data(setter.tableName, {
+          key: setter.request.tokenName
+          ,value: res.data.access_token
+        });
+
+        //登入成功的提示与跳转
+        layer.msg(res.msg, {
+          offset: '15px'
+          ,icon: 1
+          ,time: 1000
+        }, function(){
+          location.hash =  '/';
+        });
+      }
+    });
+    
+  });
+  
+});
+</script>

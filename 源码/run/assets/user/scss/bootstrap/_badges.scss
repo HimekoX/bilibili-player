@@ -1,0 +1,235 @@
+/*-----Badges-----*/
+
+.btn .badge {
+	position: relative;
+	top: -1px;
+  }
+  
+  .badge-success {
+	color: $white;
+	background-color: #2dce89;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #15ca7c;
+	  }
+	}
+  }
+  
+  .badge-info {
+	color: $white;
+	background-color: #45aaf2;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #1594ef;
+	  }
+	}
+  }
+  
+  .badge-warning {
+	color: $white;
+	background-color: #ecb403;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #c29d0b;
+	  }
+	}
+  }
+  
+  .badge-danger {
+	color: $white;
+	background-color: #dc0441;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #a11918;
+	  }
+	}
+  }
+  
+  .badge-light {
+	color: #5b6084;
+	background-color: #f0f0f2;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: #5b6084;
+		background-color: #f0f0f2;
+		text-decoration: none;
+	  }
+	}
+  }
+  
+  .badge-dark {
+	color: $white;
+	background-color: $dark;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #1d2124;
+	  }
+	}
+  }
+  
+  .badge {
+	display: inline-block;
+	padding: 3px 5px 4px;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 3px;
+  }
+  
+  .badge-pill {
+	padding-right: 1.2em;
+	padding-left: 1.2em;
+	border-radius: 10rem;
+  }
+  
+  .badgetext {
+	float: right;
+  }
+  
+  .badge-default {
+	background: rgb(84, 87, 95);
+	color: $white;
+  }
+  
+  .shape {
+	border-style: solid;
+	border-width: 0 70px 40px 0;
+	float: right;
+	height: 0px;
+	width: 0px;
+	-ms-transform: rotate(360deg);
+  
+	/* IE 9 */
+	-o-transform: rotate(360deg);
+  
+	/* Opera 10.5 */
+	-webkit-transform: rotate(360deg);
+  
+	/* Safari and Chrome */
+	transform: rotate(360deg);
+	border-color: rgba(255, 255, 255, 0) #d9534f rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .offer {
+	background: $white;
+	border: 1px solid #ddd;
+	margin: 15px 0;
+	overflow: hidden;
+  }
+  
+  .offer-danger {
+	border-color: #dc0441;
+  
+	.shape {
+	  border-color: transparent #dc0441 transparent transparent;
+	}
+  }
+  
+  .offer-success {
+	border-color: #2dce89;
+  }
+  
+  .badge-success-light {
+	background-color: rgba(29, 171, 45, 0.15) !important;
+	color: #36b37e;
+  }
+  
+  .badge-warning-light {
+	background-color: rgba(255, 171, 0, 0.15) !important;
+	color: $warning;
+  }
+  
+  .badge-danger-light {
+	color: #f94859;
+	background-color: rgba(250, 92, 124, 0.15);
+  }
+  
+  .badge-info-light {
+	color: #0a7ffb;
+	background-color: rgba(3, 85, 208, 0.1);
+  }
+  
+  .offer-success .shape {
+	border-color: transparent #2dce89 transparent transparent;
+  }
+  
+  .offer-default {
+	border-color: #6b6f80;
+  
+	.shape {
+	  border-color: transparent #6b6f80 transparent transparent;
+	}
+  }
+  
+  .offer-info {
+	border-color: #45aaf2;
+  
+	.shape {
+	  border-color: transparent #45aaf2 transparent transparent;
+	}
+  }
+  
+  .offer-warning {
+	border-color: #ecb403;
+  
+	.shape {
+	  border-color: transparent #ecb403 transparent transparent;
+	}
+  }
+  
+  .shape-text {
+	color: $white;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	right: -47px;
+	top: 0px;
+	white-space: nowrap;
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+  }
+  
+  .offer-content {
+	padding: 20px;
+  }
+  
+  .badge-gradient-success {
+	background-image: linear-gradient(to left, #43c47a 0%, #10ae23 100%);
+	color: $white;
+  }
+  
+  .badge-gradient-warning {
+	background-image: linear-gradient(to left, #f8be8d 0%, #ff9a44 100%);
+	color: $white;
+  }
+  
+  .badge-gradient-danger {
+	color: $white;
+	background-image: linear-gradient(to left, #ff90a0 0%, #fc6076 100%);
+  }
+  
+  .badge-gradient-info {
+	color: $white;
+	background-image: linear-gradient(to left, #58ebbb 0%, #0fd796 100%);
+  }

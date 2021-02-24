@@ -1,0 +1,491 @@
+<title>管理列表</title>
+
+<div class="layui-card layadmin-header">
+    <div class="layui-breadcrumb" lay-filter="breadcrumb">
+        <a lay-href="">首页</a>
+        <a>集群管理</a>
+        <a lay-href="/player/list">管理列表</a>
+        <a><cite>配置管理</cite></a>
+    </div>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-header">应用: <span id="player_title">初始化..</span></div>
+        <div class="layui-card-body" style="padding: 15px;">
+            <form class="layui-form" id="FormData" lay-filter="component-form-group">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">播放器颜色</label>
+                    <div class="layui-input-block">
+                        <div id="colorpicker"></div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">自动播放</label>
+                    <div class="layui-input-block">
+                        <select name="player_autoplay" id="player_autoplay">
+                            <option value="0" selected>初始化中..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">视频信息</label>
+                    <div class="layui-input-block">
+                        <select name="player_video_info" id="player_video_info">
+                            <option value="0" selected>初始化中..</option>
+                        </select>
+                        <small>（视频右键菜单内的视频统计信息开关）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">AV随机</label>
+                    <div class="layui-input-block">
+                        <select name="player_random_av" id="player_random_av">
+                            <option value="0" selected>初始化中..</option>
+                        </select>
+                        <small>（开启将会在菜单[弹幕系统->弹幕AV库]中随机抽取）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">AV号码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_random_av_content" lay-verify="required"
+                               placeholder="当[AV随机]未开启时生效,为空不加载AV号" autocomplete="off"
+                               class="layui-input">
+                        <small>（当[AV随机]未开启时生效,为空不加载AV号,测试AV:17416502）</small>
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">LOGO地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_logo" lay-verify="required"
+                               placeholder="图片地址 例如：/leleys/logo.png,支持外链" autocomplete="off"
+                               class="layui-input">
+                        <small>（播放器右上角的logo，建议透明logo效果最佳）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">加载图</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_background" lay-verify="required"
+                               placeholder="请输入加载图外链,为空不显示" autocomplete="off"
+                               class="layui-input">
+                        <small>（等待时间必须为0才能显示哦~）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">等待时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_wait_time" lay-verify="required"
+                               placeholder="加载等待时间 单位/秒 loading页等待时间" autocomplete="off"
+                               class="layui-input">
+                        <small>（跳转等待时间,输入"0"或 空 则不开启等待时间）</small>
+                    </div>
+
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">弹幕间隔</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_barrage_interval" lay-verify="required"
+                               placeholder="弹幕发送间隔 单位/秒 指的是间隔几秒才能发送新弹幕" autocomplete="off"
+                               class="layui-input">
+                        <small>（每秒只能发送一次弹幕）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">礼仪文字</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_barrage_etiquette" lay-verify="required"
+                               placeholder="弹幕礼仪文字 弹幕框右边文字提示" autocomplete="off"
+                               class="layui-input">
+                        <small>（弹幕输入框显示文字，建议四字之内）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">礼仪链接</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_barrage_etiquette_address" lay-verify="required"
+                               placeholder="弹幕礼仪链接 弹幕框右边按钮链接" autocomplete="off"
+                               class="layui-input">
+                        <small>（点击弹幕礼仪文字跳转链接）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">弹幕开关</label>
+                    <div class="layui-input-block">
+                        <select name="player_barrage_switch" id="player_barrage_switch">
+                            <option value="0" selected>初始化中..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">弹幕禁词</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_barrage_block" lay-verify="required"
+                               placeholder="输入关键字以,隔开" autocomplete="off"
+                               class="layui-input">
+                        <small>（屏蔽弹幕敏感字发送）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">广告开关</label>
+                    <div class="layui-input-block">
+                        <select name="player_advertising_switch" id="player_advertising_switch">
+                            <option value="0" selected>初始化中..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">广告图片</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_advertising_image_address" lay-verify="required"
+                               placeholder="暂停图片链接" autocomplete="off"
+                               class="layui-input">
+                        <small>（暂停视频时显示的广告图片）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">广告链接</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_advertising_address" lay-verify="required"
+                               placeholder="图片链接地址" autocomplete="off"
+                               class="layui-input">
+                        <small>（暂停视频时点击广告图片跳转链接）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">遮挡层</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="player_marquee_occlude" lay-verify="required"
+                               placeholder="请输入遮挡层大小，例如：9%或者9.1%" autocomplete="off"
+                               class="layui-input">
+                        <small>（用于遮挡播放器顶部跑马灯广告专用默认为0%,需要遮挡多大自行输入，支持精确到小数点）</small>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">跑马灯</label>
+                    <div class="layui-input-block">
+                        <textarea name="player_marquee_customize" placeholder="请输入跑马灯代码"
+                                  class="layui-textarea"></textarea>
+                        <small>（用于播放器任意位置进行文字跑马灯，有一定能力者可以自定义跑马灯代码）</small>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <div class="layui-btn" id="edit">立即提交</div>
+                        <div class="layui-btn layui-btn-normal" id="config">基础配置</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="layui-fluid" id="LAY-component-grid-mobile">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12">
+            <!-- 填充内容 -->
+            <div class="layui-card">
+                <div class="layui-card-header">右键菜单</div>
+                <div class="layui-card-body">
+                    <div style="margin-bottom: 10px;">
+                        <button class="layui-btn layui-btn-primary layui-btn-sm create_right_menu">
+                            新增菜单
+                        </button>
+                        <button class="layui-btn layui-btn-primary layui-btn-sm del_right_menu">
+                            删除选中
+                        </button>
+                    </div>
+
+                    <table id="player-right-menu" lay-filter="player-right-menu"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom: 12px"></div>
+<script>
+    layui.use(['admin', 'form', 'user', 'laydate', 'colorpicker', 'hex'], function () {
+        var $ = layui.$
+            , form = layui.form
+            , router = layui.router()
+            , laydate = layui.laydate
+            , search = router.search
+            , hex = layui.hex
+            , colorpicker = layui.colorpicker;
+
+
+        var tableInstance, saveRightMenuUrl = '/system/player/rightmenu/saveRightMenu?pid='+ search.id;
+
+        let modal = (values = {}) => {
+            hex.popup(saveRightMenuUrl, [
+                {title: "排序", name: "rank", type: "input", placeholder: "请输入菜单排序越大越前(必须)"},
+                {title: "菜单名称", name: "title", type: "input", placeholder: "请输入菜单名称(必须)"},
+                {title: "链接地址", name: "address", type: "input", placeholder: "菜单的跳转地址(必须)"},
+            ], res => {
+                tableInstance.instance.reload();
+            }, values, ['540px', '300px']);
+        }
+        $('.create_right_menu').click(() => {
+            modal();
+        });
+        tableInstance = hex.renderTable('player-right-menu', '/system/player/rightmenu/getRightMenuList?id=' + search.id, "#player-right-menu", [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }
+            , {
+                field: 'rank', title: '排序', edit: 'edit'
+            }
+            , {
+                field: 'title', title: '菜单名称', edit: 'edit'
+            }
+            , {
+                field: 'address', title: '链接地址', edit: 'edit'
+            }
+        ]], res => {
+            hex.setIdMap(res.data);
+        }, saveRightMenuUrl,['300px']);
+
+        $('.del_right_menu').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('player-right-menu').data);
+            hex.deleteBatchEntity('/system/player/rightmenu/delRightMenu', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+
+        var colorData = "";
+
+        $.ajax({
+            url: '/system/player/getPlayerConfig' //实际使用请改成服务端真实接口
+            , type: 'POST'
+            , dataType: 'json'//数据类型
+            , data: {id: search.id}
+            , success: res => {
+                document.getElementById("player_title").innerHTML = res.data.title;
+
+                colorData = res.data.player_color;
+
+                $('#player_autoplay').empty();
+                if (res.data.player_autoplay === 0) {
+                    $("#player_autoplay").append("<option value='0' selected>关闭</option>");
+                    $("#player_autoplay").append("<option value='1' >开启</option>");
+                } else {
+                    $("#player_autoplay").append("<option value='0' >关闭</option>");
+                    $("#player_autoplay").append("<option value='1' selected>开启</option>");
+                }
+
+                $('#player_video_info').empty();
+                if (res.data.player_video_info === 0) {
+                    $("#player_video_info").append("<option value='0' selected>关闭</option>");
+                    $("#player_video_info").append("<option value='1' >开启</option>");
+                } else {
+                    $("#player_video_info").append("<option value='0' >关闭</option>");
+                    $("#player_video_info").append("<option value='1' selected>开启</option>");
+                }
+
+                $('#player_random_av').empty();
+                if (res.data.player_random_av === 0) {
+                    $("#player_random_av").append("<option value='0' selected>关闭</option>");
+                    $("#player_random_av").append("<option value='1' >开启</option>");
+                } else {
+                    $("#player_random_av").append("<option value='0' >关闭</option>");
+                    $("#player_random_av").append("<option value='1' selected>开启</option>");
+                }
+
+                $('#player_barrage_switch').empty();
+                if (res.data.player_barrage_switch === 0) {
+                    $("#player_barrage_switch").append("<option value='0' selected>关闭</option>");
+                    $("#player_barrage_switch").append("<option value='1' >开启</option>");
+                } else {
+                    $("#player_barrage_switch").append("<option value='0' >关闭</option>");
+                    $("#player_barrage_switch").append("<option value='1' selected>开启</option>");
+                }
+
+                $('#player_advertising_switch').empty();
+                if (res.data.player_advertising_switch === 0) {
+                    $("#player_advertising_switch").append("<option value='0' selected>关闭</option>");
+                    $("#player_advertising_switch").append("<option value='1' >开启</option>");
+                } else {
+                    $("#player_advertising_switch").append("<option value='0' >关闭</option>");
+                    $("#player_advertising_switch").append("<option value='1' selected>开启</option>");
+                }
+
+                $('input[name=player_random_av_content]').val(res.data.player_random_av_content);
+                $('input[name=player_background]').val(res.data.player_background);
+                $('input[name=player_logo]').val(res.data.player_logo);
+                $('input[name=player_wait_time]').val(res.data.player_wait_time);
+                $('input[name=player_barrage_interval]').val(res.data.player_barrage_interval);
+                $('input[name=player_barrage_etiquette]').val(res.data.player_barrage_etiquette);
+                $('input[name=player_barrage_etiquette_address]').val(res.data.player_barrage_etiquette_address);
+                $('input[name=player_barrage_block]').val(res.data.player_barrage_block);
+                $('input[name=player_advertising_image_address]').val(res.data.player_advertising_image_address);
+                $('input[name=player_advertising_address]').val(res.data.player_advertising_address);
+                $('input[name=player_marquee_occlude]').val(res.data.player_marquee_occlude);
+                $('textarea[name=player_marquee_customize]').val(res.data.player_marquee_customize);
+
+                //初始色值
+                colorpicker.render({
+                    elem: '#colorpicker'
+                    , color: colorData //设置默认色
+                    , done: color => {
+                        colorData = color;
+                    }
+                });
+
+                form.render();
+            }
+        });
+
+        $('#config').click(function () {
+
+            layer.msg('正在请求中..');
+
+            $.ajax({
+                url: "/system/config/getConfig"//地址
+                , type: 'POST'//类型
+                , dataType: 'json'//数据类型
+                , data: {'name':'player_default'},
+                //请求成功
+                success: function (res) {
+                    res.data = JSON.parse(res.data.options);
+
+                    colorData = res.data.player_color;
+
+                    $('#player_autoplay').empty();
+                    if (res.data.player_autoplay === 0) {
+                        $("#player_autoplay").append("<option value='0' selected>关闭</option>");
+                        $("#player_autoplay").append("<option value='1' >开启</option>");
+                    } else {
+                        $("#player_autoplay").append("<option value='0' >关闭</option>");
+                        $("#player_autoplay").append("<option value='1' selected>开启</option>");
+                    }
+
+                    $('#player_video_info').empty();
+                    if (res.data.player_video_info === 0) {
+                        $("#player_video_info").append("<option value='0' selected>关闭</option>");
+                        $("#player_video_info").append("<option value='1' >开启</option>");
+                    } else {
+                        $("#player_video_info").append("<option value='0' >关闭</option>");
+                        $("#player_video_info").append("<option value='1' selected>开启</option>");
+                    }
+
+                    $('#player_random_av').empty();
+                    if (res.data.player_random_av === 0) {
+                        $("#player_random_av").append("<option value='0' selected>关闭</option>");
+                        $("#player_random_av").append("<option value='1' >开启</option>");
+                    } else {
+                        $("#player_random_av").append("<option value='0' >关闭</option>");
+                        $("#player_random_av").append("<option value='1' selected>开启</option>");
+                    }
+
+                    $('#player_barrage_switch').empty();
+                    if (res.data.player_barrage_switch === 0) {
+                        $("#player_barrage_switch").append("<option value='0' selected>关闭</option>");
+                        $("#player_barrage_switch").append("<option value='1' >开启</option>");
+                    } else {
+                        $("#player_barrage_switch").append("<option value='0' >关闭</option>");
+                        $("#player_barrage_switch").append("<option value='1' selected>开启</option>");
+                    }
+
+                    $('#player_advertising_switch').empty();
+                    if (res.data.player_advertising_switch === 0) {
+                        $("#player_advertising_switch").append("<option value='0' selected>关闭</option>");
+                        $("#player_advertising_switch").append("<option value='1' >开启</option>");
+                    } else {
+                        $("#player_advertising_switch").append("<option value='0' >关闭</option>");
+                        $("#player_advertising_switch").append("<option value='1' selected>开启</option>");
+                    }
+
+                    $('input[name=player_random_av_content]').val(res.data.player_random_av_content);
+                    $('input[name=player_background]').val(res.data.player_background);
+                    $('input[name=player_logo]').val(res.data.player_logo);
+                    $('input[name=player_wait_time]').val(res.data.player_wait_time);
+                    $('input[name=player_barrage_interval]').val(res.data.player_barrage_interval);
+                    $('input[name=player_barrage_etiquette]').val(res.data.player_barrage_etiquette);
+                    $('input[name=player_barrage_etiquette_address]').val(res.data.player_barrage_etiquette_address);
+                    $('input[name=player_barrage_block]').val(res.data.player_barrage_block);
+                    $('input[name=player_advertising_image_address]').val(res.data.player_advertising_image_address);
+                    $('input[name=player_advertising_address]').val(res.data.player_advertising_address);
+                    $('input[name=player_marquee_occlude]').val(res.data.player_marquee_occlude);
+                    $('textarea[name=player_marquee_customize]').val('<br><marquee width=850 scrollamount=5> <FONT face=楷体_GB2312 color=#ff0000 size=3><STRONG>◆温馨警告:请自行辨别视频中的广告，以免上当受骗◆ <FONT face=楷体_GB2312 color=#0fb4ee size=3><STRONG>文明发弹幕，营造一个和谐的观影氛围</FONT></STRONG></a> </marquee>');
+
+                    //初始色值
+                    colorpicker.render({
+                        elem: '#colorpicker'
+                        , color: colorData //设置默认色
+                        , done: color => {
+                            colorData = color;
+                        }
+                    });
+                    form.render();
+                    layer.msg('替换成功');
+                }
+            })
+        });
+
+
+        $('#edit').click(function () {
+
+            layer.msg('正在请求中..');
+            let data = {
+                'id': search.id,
+                'player_color': colorData,
+                'player_random_av_content': $('input[name="player_random_av_content"]').val(),
+                'player_background': $('input[name="player_background"]').val(),
+                'player_logo': $('input[name="player_logo"]').val(),
+                'player_wait_time': $('input[name="player_wait_time"]').val(),
+                'player_barrage_interval': $('input[name="player_barrage_interval"]').val(),
+                'player_barrage_etiquette': $('input[name="player_barrage_etiquette"]').val(),
+                'player_barrage_etiquette_address': $('input[name="player_barrage_etiquette_address"]').val(),
+                'player_barrage_block': $('input[name="player_barrage_block"]').val(),
+                'player_advertising_image_address': $('input[name="player_advertising_image_address"]').val(),
+                'player_advertising_address': $('input[name="player_advertising_address"]').val(),
+                'player_marquee_occlude': $('input[name="player_marquee_occlude"]').val(),
+                'player_marquee_customize': $('textarea[name="player_marquee_customize"]').val(),
+                'player_autoplay': $('#player_autoplay option:selected').val(),
+                'player_video_info': $('#player_video_info option:selected').val(),
+                'player_random_av': $('#player_random_av option:selected').val(),
+                'player_barrage_switch': $('#player_barrage_switch option:selected').val(),
+                'player_advertising_switch': $('#player_advertising_switch option:selected').val(),
+            };
+
+            $.ajax({
+                url: "/system/player/savePlayer"//地址
+                , type: 'POST'//类型
+                , dataType: 'json'//数据类型
+                , data: data,
+                //请求成功
+                success: function (data) {
+                    if (data.code !== 200) {
+                        layer.msg(data.msg);
+                    } else {
+                        layer.msg(data.msg);
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 1000)
+                    }
+
+                }
+            })
+        });
+
+    });
+
+</script>

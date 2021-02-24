@@ -1,0 +1,112 @@
+/*---------Thumbnails----------*/
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: $white;
+	border: 1px solid $border;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+  
+	a > img, > img {
+	  margin-right: auto;
+	  margin-left: auto;
+	}
+  
+	p:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  
+  .thumbimg {
+	height: 100%;
+	width: 100%;
+	display: block;
+  }
+  
+  .thumbnail .caption {
+	padding: 15px;
+  }
+  
+  .video-list-thumbs {
+	> li {
+	  margin-bottom: 12px;
+  
+	  > a {
+		display: block;
+		position: relative;
+		color: #6b6f80;
+		border: 1px solid $border;
+		padding: 8px;
+		border-radius: 3px transition all 500ms ease-in-out;
+		border-radius: 4px;
+	  }
+	}
+  
+	h2 {
+	  bottom: 0;
+	  font-size: 14px;
+	  height: 33px;
+	  margin: 8px 0 0;
+	}
+  
+	.fa {
+	  font-size: 60px;
+	  opacity: 0.6;
+	  position: absolute;
+	  right: 39%;
+	  top: 31%;
+	  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	  transition: all 500ms ease-in-out;
+	}
+  
+	> li > a:hover .fa {
+	  color: $white;
+	  opacity: 1;
+	  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+	}
+  
+	.duration {
+	  background-color: rgba(0, 0, 0, 0.4);
+	  border-radius: 2px;
+	  color: $white;
+	  font-size: 11px;
+	  font-weight: bold;
+	  left: 12px;
+	  line-height: 13px;
+	  padding: 2px 3px 1px;
+	  position: absolute;
+	  bottom: 12px;
+	  transition: all 500ms ease;
+	}
+  
+	> li > a:hover .duration {
+	  background-color: $black;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.video-list-thumbs .fa {
+	  right: 44%;
+	  top: 44%;
+	}
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	.video-list-thumbs {
+	  .fa {
+		font-size: 35px;
+	  }
+  
+	  h2 {
+		bottom: 0;
+		font-size: 12px;
+		height: 22px;
+		margin: 8px 0 0;
+	  }
+	}
+  }

@@ -1,0 +1,109 @@
+/*---profile---*/
+
+.profile-cover {
+	width: 100%;
+  
+	.cover {
+	  position: relative;
+	  border: 10px solid #FFF;
+	  border-radius: 7px;
+  
+	  .inner-cover {
+		overflow: hidden;
+		height: auto;
+  
+		img {
+		  border: 1px solid transparent;
+		  text-align: center;
+		  width: 100%;
+		}
+  
+		.cover-menu-mobile {
+		  position: absolute;
+		  top: 10px;
+		  right: 10px;
+  
+		  button i {
+			font-size: 17px;
+		  }
+		}
+	  }
+  
+	  ul.cover-menu {
+		padding-left: 150px;
+		position: absolute;
+		overflow: hidden;
+		left: 1px;
+		float: left;
+		bottom: 0px;
+		width: 100%;
+		margin: 0px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.24);
+  
+		li {
+		  display: block;
+		  float: left;
+		  margin-right: 0px;
+		  padding: 0px 10px;
+		  line-height: 40px;
+		  height: 40px;
+		  -moz-transition: all 0.3s;
+		  -o-transition: all 0.3s;
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+  
+		  &:hover {
+			background-color: rgba(0, 0, 0, 0.44);
+		  }
+  
+		  &.active {
+			background-color: rgba(0, 0, 0, 0.64);
+		  }
+  
+		  a {
+			color: #FFF;
+			font-weight: bold;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			text-decoration: none;
+  
+			i {
+			  font-size: 18px;
+			}
+		  }
+		}
+	  }
+	}
+  
+	.profile-body {
+	  margin: 0px auto 10px;
+	  position: relative;
+	}
+  
+	.profile-timeline {
+	  padding: 15px;
+	}
+  }
+  
+  .img-post {
+	width: 30px;
+	height: 30px;
+  }
+  
+  .img-post2 {
+	width: 50px;
+	height: 50px;
+  }
+  
+  .widget-user .wideget-user-icons a {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	border-radius: 100px;
+	line-height: 2rem;
+	margin-top: 0.3rem;
+  }
+  
+  /*---End profile---*/

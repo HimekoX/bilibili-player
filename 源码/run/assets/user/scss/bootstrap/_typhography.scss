@@ -1,0 +1,95 @@
+/*----- Typography ------*/
+
+.heading-inverse {
+	background-color: #333;
+	color: $white;
+	padding: 5px;
+  }
+  
+  .heading-primary {
+	padding: 5px;
+  }
+  
+  .heading-success {
+	background-color: #38a01e;
+	color: $white;
+	padding: 5px;
+  }
+  
+  .heading-info {
+	background-color: #45aaf2;
+	color: $white;
+	padding: 5px;
+  }
+  
+  .heading-warning {
+	background-color: #ecb403;
+	color: $white;
+	padding: 5px;
+  }
+  
+  .heading-danger {
+	background-color: #dc0441;
+	color: $white;
+	padding: 5px;
+  }
+  
+  /*------ Media object ------*/
+  
+  .media {
+	margin-top: 15px;
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-body {
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-object {
+	display: block;
+  }
+  
+  .media {
+	img {
+	  width: 40px;
+	  height: 40px;
+	}
+  
+	&.media-lg img {
+	  width: 80px;
+	  height: 80px;
+	}
+  }
+  
+  .media-right, .media > .pull-right {
+	padding-left: 10px;
+  }
+  
+  .media-body, .media-left, .media-right {
+	display: table-cell;
+	vertical-align: top;
+  }
+  
+  .media-left, .media > .pull-left {
+	padding-right: 10px;
+  }
+  
+  .media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+  }
+  
+  .media-body h4 {
+	font-weight: 600;
+	font-size: 16px;
+  }
+  
+  .media-middle {
+	vertical-align: middle;
+  }
+  
+  .media-bottom {
+	vertical-align: bottom;
+  }

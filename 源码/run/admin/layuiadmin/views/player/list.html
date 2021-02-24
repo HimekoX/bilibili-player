@@ -1,0 +1,122 @@
+<view id="manage-list">
+    <title>管理列表</title>
+
+    <div class="layui-card layadmin-header">
+        <div class="layui-breadcrumb" lay-filter="breadcrumb">
+            <a lay-href="">首页</a>
+            <a>集群管理</a>
+            <a><cite>管理列表</cite></a>
+        </div>
+    </div>
+
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">管理列表</li>
+                </ul>
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <div style="margin-bottom: 10px;">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm create">
+                                新增播放器
+                            </button>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm del">
+                                删除选中
+                            </button>
+                        </div>
+
+                        <table id="system-manage-table" lay-filter="system-manage-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</view>
+
+
+<script>
+    layui.use(['hex'], function () {
+        var $ = layui.$, hex = layui.hex, tableInstance, saveUrl = '/system/player/savePlayer';
+
+        let modal = (values = {}) => {
+            hex.popup(saveUrl, [
+                {title: "应用名称", name: "title", type: "input", placeholder: "请输入应用名称(必须)"},
+                {title: "应用密钥", name: "key", type: "input", placeholder: "请输入应用密钥(必须)"},
+                {title: "状态", name: "player_status", type: "switch", text: "启用"}
+            ], res => {
+                tableInstance.instance.reload();
+            }, values, ['540px', '300px']);
+        }
+
+        tableInstance = hex.renderTable('system-manage-table', '/system/player/getPlayerList', '#system-manage-table', [[
+            {
+                type: 'checkbox', fixed: 'left'
+            }
+            , {
+                title: '应用名称', templet: function (item) {
+                    return '<span data-id="' + item.id + '" class="detailed player-' + item.id + '" style="cursor: pointer;">' + item.title + '</span>'
+                }
+            }
+            , {
+                field: 'key', title: '应用密钥'
+            }
+            , {
+                field: 'player_status', title: '状态', dictType: "switch", dictText: "启用"
+            },
+            {
+                action: [
+                    {type: "button", icon: "layui-icon-survey", title: "修改", class: "layui-btn-normal edit"},
+                    {type: "button", icon: "layui-icon-survey", title: "配置", class: "layui-btn-normal config"},
+                ]
+            }
+        ]], res => {
+            $('#manage-list .detailed').hover(function () {
+                var id = $(this).attr('data-id'), info = [], data = hex.getMapItem(this);
+
+                let color = data.player_color == "" ? '默认' : data.player_color;
+                info.push('前台颜色：' + color);
+                let autoplay = data.player_autoplay == 0 ? '关闭' : '开启';
+                info.push('自动播放：' + autoplay);
+                let barrage_switch = data.player_barrage_switch == 0 ? '关闭' : '开启';
+                info.push('弹幕开关：' + barrage_switch);
+                let advertising_switch = data.player_advertising_switch == 0 ? '关闭' : '开启';
+                info.push('广告开关：' + advertising_switch);
+                let status = data.player_status == 0 ? '关闭' : '开启';
+                info.push('状态：' + status);
+
+                layerTipsIndex = layer.tips(info.join('<br>'), '#manage-list .player-' + id, {
+                    tips: [2, '#9a39a5'],
+                    time: 0
+                });
+
+            }, function () {
+                layer.close(layerTipsIndex);
+            });
+
+            hex.setIdMap(res.data);
+
+            $('#manage-list .edit').click(function () {
+                modal(hex.getMapItem(this));
+            });
+
+            $('#manage-list .config').click(function () {
+                let id = hex.getMapItem(this)['id'];
+                location.hash = '/player/config/id=' + id;
+            });
+        }, saveUrl);
+
+        $('#manage-list .create').click(() => {
+            modal();
+        });
+
+        $('#manage-list .del').click(() => {
+            var data = hex.listObjectToArray(tableInstance.table.checkStatus('system-manage-table').data);
+
+            hex.deleteBatchEntity('/system/player/delPlayer', data, res => {
+                tableInstance.instance.reload();
+            })
+        });
+    });
+</script>

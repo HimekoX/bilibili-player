@@ -1,0 +1,71 @@
+/*--------panel----------*/
+
+.expanel-default {
+	border: #ddd !important;
+  }
+  
+  .expanel-success {
+	border: #2dce89 !important;
+  }
+  
+  .expanel-danger {
+	border: #dc0441 !important;
+  }
+  
+  .expanel-success > .expanel-heading {
+	color: $white !important;
+	background-color: #2dce89 !important;
+	border-color: #2dce89 !important;
+  }
+  
+  .expanel-danger > .expanel-heading {
+	color: $white !important;
+	background-color: #dc0441 !important;
+	border-color: #dc0441 !important;
+  }
+  
+  .expanel-warning > .expanel-heading {
+	color: $white !important;
+	background-color: #ecb403 !important;
+	border-color: #ecb403 !important;
+  }
+  
+  .expanel-title {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	font-size: 16px !important;
+	color: inherit !important;
+  }
+  
+  .expanel {
+	margin-bottom: 20px !important;
+	background-color: $white !important;
+	border: 1px solid $border !important;
+	border-radius: 4px !important;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .expanel-default > .expanel-heading {
+	background-color: #f0f0f2 !important;
+	border: 1px solid $border !important;
+  }
+  
+  .expanel-heading {
+	padding: 10px 15px !important;
+	border-bottom: 1px solid $border;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+  }
+  
+  .expanel-footer {
+	padding: 10px 15px !important;
+	background-color: #f0f0f2 !important;
+	border-top: 1px solid $border !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+  }
+  
+  .expanel-body {
+	padding: 15px !important;
+  }
