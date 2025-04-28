@@ -1,1 +1,46 @@
-IyDku5PlupPlipvlipvmkq3mlL7lmagnCgrmtYvor5XlkI7lj5jkuLrnp4HmnInku5PlupPlipvlipvmkq3mlL7lmagnCgojIyDlip/og70KCi0g5pSv5oyB6Kej5p6QCi0g5pSv5oyB5YWN6LS5CgotIOaUr+aMgeWFjei0ueWQjuiHquWKqOaSreaUvgotIOaUr+aMgeWFjei0ueWQjuiHquWKqOWKoOi9vQoKIyMg5L2/55So5pa55byPCgoxLiDlhbPkuo7mnKzlnLDov5DooYzkvb/nlKgKCmBgYGh0bWwKPGRpdiBpZD0iYmlsaS1wbGF5ZXIiPjwvZGl2Pgo8c2NyaXB0IHNyYz0iLi9iaWxpLXBsYXllci5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQ+CiAgICB2YXIgcGxheWVyID0gbmV3IEJpbGlQbGF5ZXIoewogICAgICAgIGNvbnRhaW5lcjogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2JpbGktcGxheWVyJyksCiAgICAgICAgdmlkZW86IHsKICAgICAgICAgICAgdXJsOiAnaHR0cHM6Ly9leGFtcGxlLmNvbS92aWRlby5tcDQnLAogICAgICAgICAgICB0eXBlOiAnYXV0bycKICAgICAgICB9CiAgICB9KTsKPC9zY3JpcHQ+CmBgYAoKMi4g5pSv5oyB6Kej5p6Q5Lqn5ZOB5o6l5Y+jCgpgYGBqYXZhc2NyaXB0CnZhciBwbGF5ZXIgPSBuZXcgQmlsaVBsYXllcih7CiAgICBjb250YWluZXI6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdiaWxpLXBsYXllcicpLAogICAgdmlkZW86IHsKICAgICAgICB1cmw6ICdodHRwczovL2FwaS5leGFtcGxlLmNvbS9wYXJzZT91cmw9aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL2F2MTIzNDU2NzgnLAogICAgICAgIHR5cGU6ICdwYXJzZScKICAgIH0KfSk7CmBgYAoKIyMg6K+35rOo5oSPCgrlvZPliY3ku5PlupPlipvlipvmkq3mlL7lmagnlt7kuLogKirpnZ7llK/kuIDlvIDmupAqKiDku5PlupPvvIzlj6/og73lrZjlnKjkuIDkupvpmZDliLbvvIzor7flgZrmiJHnmoTkuLvpobnnm67kvb/nlKjjgIIKCj4g5q2k5Li65LiA5Liq56eB5pyJ6aG555uu77yM5LiN5YWB6K645LuO5aSW6YOo6K6/6Zeu44CC
+# 仿哔哩哔哩播放器（私有仓库）
+
+此仓库已设置为私有，仅限授权用户访问。
+
+## 功能
+
+- 支持解析
+- 支持播放
+- 支持播放后自动加载
+- 支持播放后自动加载
+
+## 使用方式
+
+1. 关于本地运行使用
+
+```html
+<div id="bili-player"></div>
+<script src="./bili-player.js"></script>
+<script>
+    var player = new BiliPlayer({
+        container: document.getElementById('bili-player'),
+        video: {
+            url: 'https://example.com/video.mp4',
+            type: 'auto'
+        }
+    });
+</script>
+```
+
+2. 支持解析产品接口
+
+```javascript
+var player = new BiliPlayer({
+    container: document.getElementById('bili-player'),
+    video: {
+        url: 'https://api.example.com/parse?url=https://www.bilibili.com/video/av12345678',
+        type: 'parse'
+    }
+});
+```
+
+## 请注意
+
+当前仿哔哩哔哩播放器已为**私有**项目，可能存在一些限制，请做我的主项目使用。
+
+> 此为一个私有项目，不允许从外部访问。
